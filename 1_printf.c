@@ -23,4 +23,6 @@ int main(void) {
     printf("也可代入多個不同資料型別的值，像是這個字元:%c，和這個浮點數:%f\n", 'c', 0.1); // 資料型別後面會介紹，這邊只要記得 % 後面接的文字是 specifier character
     // 每種寫法代表著一種資料型別 ，須考量代入的值才能正確使用
     // 詳細寫法可參考這網址 http://www.cplusplus.com/reference/cstdio/printf/
+
+    printf("a=%7.2f", 1.3333333);// %7.2f 的結果會是1.33，原因是format可以指定輸出格式，7是小數點以前使用的空間，小數點本身佔據1個bit，小數點以下只存放兩位數
 }
