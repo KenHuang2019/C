@@ -81,7 +81,17 @@
 >    * format語法與specifier character `printf("代入數字%d輸出", 1)`
 ### 資料型別與變數
 > * [範例原始碼 2_data_type_and_variables.c](https://github.com/KenHuang2019/C/blob/master/2_data_type_and_variables.c)
->    * 變數命名，在C語言的宣告至少需要給定資料型別、變數名稱這兩種資訊，並以分號結尾。寫法：資料型別 變數名稱;　`int num;`
+>    * 變數命名寫法：資料型別 變數名稱;　`int num;`
+>    * 初始化寫法：資料型別 變數名稱 = 初始值;　`int num = 0;`
+>    * 使用 `scanf()` 接收使用者輸入
+>    * 使用 `sizeof()` 查看變數內的資料大小<br>
+>   <br>
+>   資料處理主要會有兩個問題: 記憶 與 計算<br>
+>   型別決定了儲存和計算方式<br>
+>   儲存的部分:<br>
+>   電腦的記憶體空間是以 位元組(byte)為單位<br>
+>   一個位元組(byte)由多個位元(bit)所構成<br>
+
 ```
 章節原始碼範例:
 
