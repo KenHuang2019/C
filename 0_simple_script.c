@@ -11,7 +11,7 @@
 int main(void) // 需定義此function執行完要回傳的資料型別(此處以int為例)，void 的意思是不帶入任何參數進到這個function，現代編譯器可省略void不寫
 {   // 大括號{}包住的部分稱為一個區塊，此為區塊開始
 
-    // printf是事先寫好的function，受過上方的 #include引入做使用
+    // printf是事先寫好的function，透過上方的 #include引入做使用
     printf( //print是指讓作業系統輸出後面的字在cmd上的意思，f是format，讓程式依照閱讀\n這類跳脫字元進行換行等格式化動作
         "Hello World!" // 此為字串寫法，通常用雙引號 " 包住資料
     );
