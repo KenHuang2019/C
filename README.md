@@ -139,7 +139,7 @@
 >    * 關係運算子與邏輯運算子因為常與條件敘述混合使用，後續再紀錄重點
 
 ### 流程控制 - if 條件敘述 ( if {...} lese if {...} else {...} )
-> * [範例原始碼 5_.c](https://github.com/KenHuang2019/C/blob/master/5_.c)
+> * [範例原始碼 5_if_else.c](https://github.com/KenHuang2019/C/blob/master/5_if_else.c)
 >    * 近似於口語的 如果... 或者... 不然... `if ( 表示式表達條件 ) { 程式執行特定功能 }`
 >    * 入門可以從畫flowchart開始 (single-entry / single-exit control)
 ![condition_statement_flowchart](https://github.com/KenHuang2019/C/blob/master/images/5_condition_statement_flowchart.png)
@@ -171,13 +171,32 @@
 ```c
 int a = 5;
 if(a < 5)
-    print("a < 5\n");
+    printf("a < 5\n");
 else if(a > 5)
-    print("a > 5\n");
+    printf("a > 5\n");
 else
-    print("a = 5\n");
+    printf("a = 5\n");
 ```
 ### 流程控制 - switch 條件敘述 ( switch (變數) case 條件: ...; break; case 條件: ...; break; default: ...; )
+> * [範例原始碼 6_switch.c](https://github.com/KenHuang2019/C/blob/master/6_switch.c)
+>    * if ... else if ... else ... 的另一種寫法，但語法上更簡潔，不需要重複寫被判斷的變數名稱
+```c
+int a = 'a';
+switch (a) {
+    case 'c':
+        print("a is c\n");
+        break;
+    case 'b':
+        print("a is b\n");
+        break;
+    case 'a':
+        print("a is a\n");
+        break;
+    default:
+        printf("a is nothing\n");
+```
+
+
 
 ```
 章節原始碼範例:
