@@ -17,7 +17,7 @@ int main() {
     詳細介紹請參考這裡: https://pclevinblog.pixnet.net/blog/post/314560420-c-%E8%AA%9E%E8%A8%80%E5%8F%8A%E9%97%9C%E9%8D%B5%E5%AD%97-reserved-keywords
     */
     int number1; // 設定變數的動作叫做「宣告"，需先指定資料型別，此處用int意思是整數，number1的位置是變數名稱(可自行定義)
-    int number2, sum; // 若相同數據類別，可在同一行以逗號隔開做分號
+    int number2, sum=0; // 若相同數據類別，可在同一行以逗號隔開做分號
     /*
     上面寫法為「未定義行為」，適用於變數會先被複寫的狀況
     若變數會直接被拿來運算或輸出，需做「初始化」，宣告同時直接指定初始值
