@@ -63,6 +63,7 @@
 ##### Ubuntu 18.04 Linux 有內建 gcc 編譯器，在Terminal 輸入 $ `gcc  --version` 即可確認是否有安裝此編譯器、查看版本資訊
 ![gcc_version_image](https://github.com/KenHuang2019/C/blob/master/images/gcc_version.png)
 ##### 編譯語法： `gcc -o <執行檔名稱.exe> <原始碼檔案名稱.c>`
+##### 執行語法： `./執行檔名稱.exe`
 ---
 ## C語言基本語法
 這邊僅記錄重點，詳細敘述會用comment寫在範例原始碼
