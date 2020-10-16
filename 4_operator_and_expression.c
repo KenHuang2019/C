@@ -1,5 +1,7 @@
 // 4. 運算元、運算子、表示式
 // 改寫 2 的範例：兩數字相加程式
+// 每次接收到的數值都直接加總回sum
+// 及可重複利用變數空間
 
 #include <stdio.h>
 
@@ -17,7 +19,8 @@ int main() {
     printf("Sum is %d\n", sum); 
 
     printf("Sum+1 is %d\n", sum++); 
-
+    
+    // ++a 與 a++ 的差異說明
     printf("Reset sum as 5\n");
     sum = 5;
     printf("sum: %d\n", sum);   // 5
