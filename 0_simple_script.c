@@ -2,7 +2,7 @@
 
 #include <stdio.h> // C語言有標準的 I/O Library , 讓電腦可以跟作業系統溝通，讓它執行下方 main function
 
-int main(void) // 需定義此function執行完要回傳的資料型別(此處以int為例)，void 的意思是不帶入任何參數進到這個function
+int main(void) // 需定義此function執行完要回傳的資料型別(此處以int為例)，void 的意思是不帶入任何參數進到這個function，現代編譯器可省略void不寫
 {   // 大括號{}包住的部分稱為一個區塊，此為區塊開始
 
     // printf是事先寫好的function，受過上方的 #include引入做使用
