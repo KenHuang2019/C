@@ -177,9 +177,10 @@ else if(a > 5)
 else
     printf("a = 5\n");
 ```
-### 流程控制 - switch 條件敘述 ( switch (變數) case 條件: ...; break; case 條件: ...; break; default: ...; )
+### 流程控制 - switch 條件敘述 ( switch (變數) case 條件: ...; break; case 條件: ...; break; default: ...;)
 > * [範例原始碼 6_switch.c](https://github.com/KenHuang2019/C/blob/master/6_switch.c)
->    * if ... else if ... else ... 的另一種寫法，但語法上更簡潔，不需要重複寫被判斷的變數名稱
+>    * if ... else if ... else ... 的另一種寫法，但語法上更簡潔，不需要重複寫被判斷的變數名稱及部分運算子
+>    * 不是用於多重數值區間判斷，比較適合單一變數的多種狀態判斷
 ```c
 char a = 'a';
 switch (a) {
