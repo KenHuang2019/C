@@ -112,7 +112,7 @@
 
 ### 字元編碼
 > * [範例原始碼 3_char_encoding.c](https://github.com/KenHuang2019/C/blob/master/3_char_encoding.c)
->    * 常見編碼方式 [ASCII](https://zh.wikipedia.org/zh-tw/ASCII) [Big-5](https://zh.wikipedia.org/zh-tw/%E5%A4%A7%E4%BA%94%E7%A2%BC) [UTF-8](https://zh.wikipedia.org/zh-tw/UTF-8)
+>    * 常見編碼方式 [ASCII](https://zh.wikipedia.org/zh-tw/ASCII) 、 [Big-5](https://zh.wikipedia.org/zh-tw/%E5%A4%A7%E4%BA%94%E7%A2%BC) 、 [UTF-8](https://zh.wikipedia.org/zh-tw/UTF-8)
 >    * 字元運算 `printf('A' + 1) // B`
 >    * 大小寫轉換 `printf('A' + 32) // a`
 ```
