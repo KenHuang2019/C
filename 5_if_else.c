@@ -14,7 +14,10 @@ int main(){
 
     // 根據不同溫度有不同反饋
     if ( f >= 90 ) {
-        printf("hot\n"); // 華氏溫度大於90度時，輸出 hot
+        if ( f > 95 )
+            printf("super hot\n"); // 華氏溫度大於95度時，輸出 super hot
+        else
+            printf("a little hot\n"); // 華氏溫度介於90~95度時，輸出 a littlehot
     } else if ( f >= 80) {
         printf("warm\n"); // 華氏溫度介於80~90度時，輸出 warm
     } else {
