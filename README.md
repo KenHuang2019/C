@@ -66,8 +66,9 @@
 ---
 ## C語言基本語法
 這邊僅記錄重點，詳細敘述會用comment寫在範例原始碼
-### 理解C語言基礎架構 [範例原始碼 0_Simple_script.c](https://github.com/KenHuang2019/C/blob/master/0_simple_script.c)
-> * 引用函式庫 `#include <標準函式庫名稱>`
-> * 理解 `main()` 架構和程式區塊
-> * 使用 `printf()` 輸出字串
-> * 理解 `return` 
+### 理解C語言基礎架構
+> * [範例原始碼 0_Simple_script.c](https://github.com/KenHuang2019/C/blob/master/0_simple_script.c)
+>> * 引用函式庫 `#include <標準函式庫名稱>`
+>> * 理解 `main()` 架構和程式區塊
+>> * 使用 `printf()` 輸出字串
+>> * 理解 `return` 
