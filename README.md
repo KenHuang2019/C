@@ -67,6 +67,7 @@
 ---
 ## C語言基本語法
 這邊僅記錄重點，詳細敘述會用comment寫在範例原始碼
+
 ### C語言程式基礎架構
 > * [範例原始碼 0_Simple_script.c](https://github.com/KenHuang2019/C/blob/master/0_simple_script.c)
 >    * 註解寫法 `//這是單行註解` `/* 這種是多行註解 */`
@@ -74,11 +75,13 @@
 >    * 理解 `main()` 架構和程式區塊
 >    * 使用 `printf()` 輸出字串
 >    * 理解 `return` 用途
+
 ### 字符輸出
 > * [範例原始碼 1_printf.c](https://github.com/KenHuang2019/C/blob/master/1_printf.c)
 >    * 跳脫字元 Ex: `\n`
 >    * 跨行輸出
 >    * format語法與specifier character `printf("代入數字%d輸出", 1)`
+
 ### 資料型別與變數
 > * [範例原始碼 2_data_type_and_variables.c](https://github.com/KenHuang2019/C/blob/master/2_data_type_and_variables.c)
 >    * 變數命名寫法：資料型別 變數名稱;　`int num;`
@@ -93,7 +96,7 @@
 >   一個位元組(byte)由多個位元(bit)所構成<br>
 >![byte_diagram](https://github.com/KenHuang2019/C/blob/master/images/2_%E8%B3%87%E6%96%99%E5%9E%8B%E5%88%A5.png)<br>
 >   每個bit不是0就是1，所以各種資料都可以轉換成一串01的序列表示<br>
->   這就是為甚麼任何格式檔案(文字、圖片、影片等)都可以被存在硬碟上的原因<br>
+>   這就是任何格式的檔案(文字、圖片、影片等)都可被存在硬碟上的原因<br>
 >   常用的型別如下表：<br>
 
 |    名稱   | 大小(位元組) |   例子  |
@@ -106,6 +109,12 @@
 | double    |      8      |   3.2  |
 
 (依實際作業系統不同可能有微小差異，完整介紹介紹可參考[維基百科](https://en.wikipedia.org/wiki/C_data_types))
+
+### 字元編碼
+> * [範例原始碼 3_char_encoding.c](https://github.com/KenHuang2019/C/blob/master/3_char_encoding.c)
+>    * 常見編碼方式 [ASCII](https://zh.wikipedia.org/zh-tw/ASCII) [Big-5](https://zh.wikipedia.org/zh-tw/%E5%A4%A7%E4%BA%94%E7%A2%BC) [UTF-8](https://zh.wikipedia.org/zh-tw/UTF-8)
+>    * 字元運算 `printf('A' + 1) // B`
+>    * 大小寫轉換 `printf('A' + 32) // a`
 ```
 章節原始碼範例:
 
