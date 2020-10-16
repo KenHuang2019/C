@@ -1,4 +1,4 @@
-// 基本輸出介紹
+// C語言基礎程式結構介紹
 
 #include <stdio.h> // C語言有標準的 I/O Library , 讓電腦可以跟作業系統溝通，讓它執行下方 main function
 
