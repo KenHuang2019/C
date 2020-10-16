@@ -121,7 +121,7 @@
 >    * 大小寫轉換 `printf('A' + 32) // a`
 
 ### 運算元、運算子、表示式
-> * [範例原始碼 2_data_type_and_variables.c](https://github.com/KenHuang2019/C/blob/master/2_data_type_and_variables.c)
+> * [範例原始碼 4_operator_and_expression.c](https://github.com/KenHuang2019/C/blob/master/4_operator_and_expression.c)
 >    * 表示式 `5 - 4 + 3 * 2 % 1`
 >    * 運算子 `+ - * / %`<br>
             /是除，若對象是整數，結果會捨去小數<br>
