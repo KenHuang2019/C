@@ -118,6 +118,18 @@
 >    * 常見編碼方式 [ASCII](https://zh.wikipedia.org/zh-tw/ASCII) 、 [Big-5](https://zh.wikipedia.org/zh-tw/%E5%A4%A7%E4%BA%94%E7%A2%BC) 、 [UTF-8](https://zh.wikipedia.org/zh-tw/UTF-8)
 >    * 字元運算 `printf('A' + 1) // B`
 >    * 大小寫轉換 `printf('A' + 32) // a`
+
+### 運算元、運算子、表示式
+> * [範例原始碼 2_data_type_and_variables.c](https://github.com/KenHuang2019/C/blob/master/2_data_type_and_variables.c)
+>    * 表示式 `5 - 4 + 3 * 2 % 1`
+>    * 運算子 `+ - * / %`<br>
+        /是除，若對象是整數，結果會捨去小數<br>
+        %是mod，用來取餘數 `a = 7 / 4 // a = 1`<br>
+>    * 運算元 `5 4 3 2 1`
+>    * 按照優先順序逐一處理
+>    * ()優先處理，多種優先順序時會出現 `( 1 + ( 2 + 3 ) ) * 5` 仍然用()
+>    * 除法結果若為整數型態變數接收會自動捨去小數點以下的數值
+
 ```
 章節原始碼範例:
 
