@@ -1,102 +1,67 @@
-// C »y¨¥ °òÂ¦»yªk https://www.youtube.com/watch?v=r46-coAO6-A&list=PLY_qIufNHc293YnIjVeEwNDuqGo8y2Emx&index=22
-// 1~31¼v¤ù »y¨¥¤¶²Ð Â²³æµ{¦¡¬[ºc ¼g§@­·®æ ¦r¤¸¸õ²æ ¦r¤¸½s½X ¸ê®Æ«¬§O ÅÜ¼Æ©R¦W
+#include <stdio.h> // Cèªžè¨€æœ‰æ¨™æº–çš„ I/O Library , è®“é›»è…¦å¯ä»¥è·Ÿä½œæ¥­ç³»çµ±æºé€šï¼Œè®“å®ƒåŸ·è¡Œä¸‹æ–¹ main function
 
-/* (¦h¦æµù¸Ñ¥Ü½d)
-¦b¤¶²ÐC»y¨¥¤§«e¡A»Ý­n¥ý¤F¸Ñ»y¨¥ªº¥Î³~¡A©Mµ{¦¡¯à°µ¨ì¤°»ò¨Æ±¡
-»y¨¥³o¥ó¨Æ±¡¡A¤@¯ë¨Ó»¡¬O¥Î¨Ó·¾³qªº¡A´N¹³§Ú­Ì¥­±`»¡¤¤¤å¡A¬O¬°¤F­nÅý¹ï¤è¤F¸Ñ§Ú­Ìªº·Qªk¡A¤S©Î¬O·¾³q«á©¼¦¹¯à°÷¦X¤O§¹¦¨¬Y¨Ç¨Æ±¡
-¦Óµ{¦¡»y¨¥©O¡A´N¬O¥Î¦b©M¹q¸£·¾³q¡A¥H¥Ø«e¹q¸£¬ì¾Çªºµo®i¡A¤j¦hªºª¬ªp¨ä¹ê¬O§Ú­Ì½Ð¹q¸£¨Ì·Ó§Ú­ÌªºÅÞ¿è¨Ó­pºâ
-¨Ã±N³Ì«áªºµ²ªG§i¶D§Ú­Ì´N¦n¡A¤¤¶¡ªº¹Lµ{§Ú­Ì¨ä¹ê¤£¤@©w·Qª¾¹D
-¨º­nª¾¹D«ç»ò©M¹q¸£·¾³q¡A¥²¶·¥ý²z¸Ñ¹q¸£ªº°ò¥»·§©À¡A¤~ª¾¹D§Ú­Ìµ¹¹q¸£ªº³o¨Çµ{¦¡¡A¹ê»Ú¤W¬O¦p¦ó¹B§@ªº
-¹q¸£°ò¥»¤W¥Ñ¤@¤U¤­ºØ³æ¤¸ºc¦¨¡G
-    ±±¨î»P¹Bºâ³æ¤¸¡]CPU¡^
-    °O¾ÐÅé³æ¤¸¡]Memory¡^
-    »²§UÀx¦s³æ¤¸¡]µwºÐ¡^
-    ¿é¤J³æ¤¸¡]Áä½L·Æ¹«¡^
-    ¿é¥X³æ¤¸¡]¿Ã¹õ¡^
-¨ä¤¤»P§Ú­Ì­n¼gªºµ{¦¡½X³Ì¬ÛÃöªº¬O CPU ©M Memory¡A¥L­Ì³Ì¥D­nªº¥\¯à´N¬O²z¸Ñ¨Ã¥B°O¾Ð
-¤HÃþ³z¹L¿é¤J³æ¤¸µ¹¥L­Ìªº¸ê°T¡A¨Ò¦p§Ú­Ì¥­±`¦bÁä½L¤W¥´¦r¡B¦b·Æ¹«¤WÂIÀ»³o¨Ç°Ê§@
-¹ê»Ú¤W¬O¦b±±¨î¶Ç°e¨ì CPU ªº¹q¬y¡A³z¹L¹q¸£µwÅé¦b¥X¼t®É´N¤w¸g¼g¦n¦b¤W­±ªºµ{¦¡
-±N¹q¬yÂà´«¦¨¹Bºâ¹Lµ{¡A¨Ã¥B±Nµ²ªG¶Çµ¹§Ú­Ì¦w¸Ëªº§@·~¨t²Î¡A¤~¦b¿Ã¹õ¤WÅã¥Ü¤@¨Ç¤å¦r¬Æ¦Ü²£¥Í¤@¨Ç°Êµe
+int main(void) // éœ€å®šç¾©æ­¤functionåŸ·è¡Œå®Œè¦å›žå‚³çš„è³‡æ–™åž‹åˆ¥(æ­¤è™•ä»¥intç‚ºä¾‹)ï¼Œvoid çš„æ„æ€æ˜¯ä¸å¸¶å…¥ä»»ä½•åƒæ•¸é€²åˆ°é€™å€‹function
+{   // å¤§æ‹¬è™Ÿ{}åŒ…ä½çš„éƒ¨åˆ†ç¨±ç‚ºä¸€å€‹å€å¡Šï¼Œæ­¤ç‚ºå€å¡Šé–‹å§‹
 
-¨º³o¨Ç¹q¬y¦bCPU¤¤¨ä¹ê»Ý­n³QÂ½Ä¶¦¨¤@°ï 0 ©M 1 (¤]¥NªíµÛ ¹q¬y¨S³q¹L¡B¹q¬y³q¹L)¨Ó¶i¦æ¹Bºâ
-¦­´Á¶}µo¹q¸£µwÅéªº¤H¡A¶}©l·Q»¡³o¨Ç¹Bºâ¤è¦¡¤j¦h¬O©T©wªº
-¨º¨ä¹ê¥i¥H¥Î¯S©wªº«ü¥O¶°(¨Ò¦px86, ARM, IA-64)¡A¨Ó¥Nªí¤@¨Ç 0 ©M 1 ªº±Æ¦C²Õ¦X
-¦A¬°³o¨Ç«ü¥O¨ú­Ó§Ú­Ì¤ñ¸û¦nÀ´±o¦WºÙ¡A¦p ADD¡BLOAD¡BSTORE SUMµ¥³æ¦r¡A¨Ã¥B¶}µoÂ½Ä¶³o¨Ç¦WºÙªº²ÕÄ³¾¹(Assembler)
-¤]´N¥X²{¤F²Õ¦X»y¨¥¡A´£¤É¤Fµ{¦¡½Xªº¥i¾\Åª©Ê¡A¼gµ{¦¡ªº®É­Ô¡A«ä¦Ò¤]¤ñ0101³o¼Ë¨Óªº§óª½Ä±¤@¨Ç
-
-¤§«á¤S¦³¤HÄ±±oÁÙ¬O¤£°÷±µªñ§Ú­Ìªº¤é±`¥Í¬¡¡A´N¦A¶}µo¤F°ª¶¥»y¨¥©M½sÄ¶¾¹(compiler)
-Åý§Ú­Ì¥i¥H¥Î¥­±`»¡¸Ü©Î¬O´y­z¼Æ¾Çªº¤è¦¡¼gµ{¦¡(¨Ò¦p SUM = A + B)¡A¦A±N§Ú­Ì¼g¤Uªº¦rµü³z¹L½sÄ¶¾¹Â½Ä¶¦¨²Õ¦X»y¨¥
-¦Ó§Ú­Ì­n¾ÇªºC»y¨¥©O¡A¥¿¬O¤µ¤é²³¦h°ª¶¥»y¨¥ªºµo®i·½ÀY
-
-C»y¨¥¯S¦â:
-    °ª¶¥»y¨¥¤§¤@¡A¸û¾÷¾¹»y¨¥§ó±µªñ¤HÃþ±`¥Îªº»y¨¥
-    ¨ã¦³¥iÄâ©Ê¡A¼g¤@¥÷µ{¦¡½X´N¥i¦b¤£¦P¥­¥x¤W°õ¦æ(¦]¬°¥i¥H¥ý½sÄ¶¦¨¤@°ï01¡A¨ì­þªº¾÷¾¹³£¬Ý±oÀ´)
-    ¥i¼g¥X®Ä²v¸û°ªªºµ{¦¡
-     */
-#include <stdio.h> // C»y¨¥¦³¼Ð·Çªº I/O Library , Åý¹q¸£¥i¥H¸ò§@·~¨t²Î·¾³q¡AÅý¥¦°õ¦æ¤U¤è main function
-
-int main(void) // »Ý©w¸q¦¹function°õ¦æ§¹­n¦^¶Çªº¸ê®Æ«¬§O(¦¹³B¥Hint¬°¨Ò)¡Avoid ªº·N«ä¬O¤£±a¤J¥ô¦ó°Ñ¼Æ¶i¨ì³o­Ófunction
-{   // ¤j¬A¸¹{}¥]¦íªº³¡¤ÀºÙ¬°¤@­Ó°Ï¶ô¡A¦¹¬°°Ï¶ô¶}©l
-
-    /* °ò¥»¿é¥X¤¶²Ð ¶}©l */
-    // printf¬O¨Æ¥ý¼g¦nªºfunction¡A¨ü¹L¤W¤èªº #include¤Þ¤J°µ¨Ï¥Î
-	printf( //print¬O«üÅý§@·~¨t²Î¿é¥X«á­±ªº¦r¦bcmd¤Wªº·N«ä¡Af¬Oformat¡AÅýµ{¦¡¨Ì·Ó¾\Åª\n³oÃþ¸õ²æ¦r¤¸¶i¦æ´«¦æµ¥®æ¦¡¤Æ°Ê§@
-        "Hello World!" // ¦¹¬°¦r¦ê¼gªk¡A³q±`¥ÎÂù¤Þ¸¹ " ¥]¦í¸ê®Æ
+    /* åŸºæœ¬è¼¸å‡ºä»‹ç´¹ é–‹å§‹ */
+    // printfæ˜¯äº‹å…ˆå¯«å¥½çš„functionï¼Œå—éŽä¸Šæ–¹çš„ #includeå¼•å…¥åšä½¿ç”¨
+	printf( //printæ˜¯æŒ‡è®“ä½œæ¥­ç³»çµ±è¼¸å‡ºå¾Œé¢çš„å­—åœ¨cmdä¸Šçš„æ„æ€ï¼Œfæ˜¯formatï¼Œè®“ç¨‹å¼ä¾ç…§é–±è®€\né€™é¡žè·³è„«å­—å…ƒé€²è¡Œæ›è¡Œç­‰æ ¼å¼åŒ–å‹•ä½œ
+        "Hello World!" // æ­¤ç‚ºå­—ä¸²å¯«æ³•ï¼Œé€šå¸¸ç”¨é›™å¼•è™Ÿ " åŒ…ä½è³‡æ–™
     );
 
-    printf("¬Æ»ò¬O¸õ²æ¦r²Å? Á|¨Ò¨Ó»¡:\\n¬O´«¦æ\n<-³oÃä¦³¤@­Ó\\n\n"); // ³z¹L¤Ï±×½u¥iÅý¯S©w¼gªk°õ¦æ¯S©w¥\¯à¡A¥H¦¹¦æ¥Ü½d¬°¨Ò\n¥i°õ¦æ´«¦æ¥\¯à¡A\\«hÅý¤@¯ëªº¤Ï±×½u¥i¸õ²æ¨ä¥\¯à©Ê³Q¦C¦L³æ­Ó¤Ï±×½u¦bcmd¤W
-	// ¨ä¥L¼gªk¥i°Ñ¦Ò³o¸Ìªºªí®æ¡Ghttps://ignatius1895.pixnet.net/blog/post/285538039-c-%E8%AA%9E%E8%A8%80%E6%95%99%E5%AD%B8---06---%E8%BC%B8%E5%87%BA%E6%96%87%E5%AD%97
+    printf("ç”šéº¼æ˜¯è·³è„«å­—ç¬¦? èˆ‰ä¾‹ä¾†èªª:\\næ˜¯æ›è¡Œ\n<-é€™é‚Šæœ‰ä¸€å€‹\\n\n"); // é€éŽåæ–œç·šå¯è®“ç‰¹å®šå¯«æ³•åŸ·è¡Œç‰¹å®šåŠŸèƒ½ï¼Œä»¥æ­¤è¡Œç¤ºç¯„ç‚ºä¾‹\nå¯åŸ·è¡Œæ›è¡ŒåŠŸèƒ½ï¼Œ\\å‰‡è®“ä¸€èˆ¬çš„åæ–œç·šå¯è·³è„«å…¶åŠŸèƒ½æ€§è¢«åˆ—å°å–®å€‹åæ–œç·šåœ¨cmdä¸Š
+	// å…¶ä»–å¯«æ³•å¯åƒè€ƒé€™è£¡çš„è¡¨æ ¼ï¼šhttps://ignatius1895.pixnet.net/blog/post/285538039-c-%E8%AA%9E%E8%A8%80%E6%95%99%E5%AD%B8---06---%E8%BC%B8%E5%87%BA%E6%96%87%E5%AD%97
 
-    // printf ¥i¨Ï¦h²Õ¬Û¾F¦r¦ê¦Û°Êµ²¦X¡A¥B¦b¬A¸¹¤º¥i´«¦æ
+    // printf å¯ä½¿å¤šçµ„ç›¸é„°å­—ä¸²è‡ªå‹•çµåˆï¼Œä¸”åœ¨æ‹¬è™Ÿå…§å¯æ›è¡Œ
     printf(
-        "²Ä¤@¦æ  ¢Ö¡@¡@¡@¢Ö¡@¢×¢×¢×¢×¢×\n"
-        "²Ä¤G¦æ  ¢Ö¡@¡@¡@¢Ö¡@¡@¡@¢×¡@¡@\n"
-        "²Ä¤T¦æ  ¢Ö¢Ö¢Ö¢Ö¢Ö¡@¡@¡@¢×¡@¡@\n"
-        "²Ä¥|¦æ  ¢Ö¡@¡@¡@¢Ö¡@¡@¡@¢×¡@¡@\n"
-        "²Ä¤­¦æ  ¢Ö¡@¡@¡@¢Ö¡@¢×¢×¢×¢×¢×\n"
-    ); // ­Y¦³¸ó¦æ¹Ï§Î¿é¥X¡A¥i¥Î³oºØ¤è¦¡¼g¡A¥iÅª©Ê¸û°ª
-    /* °ò¥»¿é¥X¤¶²Ð µ²§ô */
+        "ç¬¬ä¸€è¡Œ  ï¼¨ã€€ã€€ã€€ï¼¨ã€€ï¼©ï¼©ï¼©ï¼©ï¼©\n"
+        "ç¬¬äºŒè¡Œ  ï¼¨ã€€ã€€ã€€ï¼¨ã€€ã€€ã€€ï¼©ã€€ã€€\n"
+        "ç¬¬ä¸‰è¡Œ  ï¼¨ï¼¨ï¼¨ï¼¨ï¼¨ã€€ã€€ã€€ï¼©ã€€ã€€\n"
+        "ç¬¬å››è¡Œ  ï¼¨ã€€ã€€ã€€ï¼¨ã€€ã€€ã€€ï¼©ã€€ã€€\n"
+        "ç¬¬äº”è¡Œ  ï¼¨ã€€ã€€ã€€ï¼¨ã€€ï¼©ï¼©ï¼©ï¼©ï¼©\n"
+    ); // è‹¥æœ‰è·¨è¡Œåœ–å½¢è¼¸å‡ºï¼Œå¯ç”¨é€™ç¨®æ–¹å¼å¯«ï¼Œå¯è®€æ€§è¼ƒé«˜
+    /* åŸºæœ¬è¼¸å‡ºä»‹ç´¹ çµæŸ */
 
-    /* ¼Æ¦r¾Þ§@¤¶²Ð ¶}©l */
-    // ¥H¨â¼Æ¦r¬Û¥[µ{¦¡°µ¥Ü½d¡Aµ{¦¡¥\¯à¬OÅý¨Ï¥ÎªÌ¦bcmd¿é¤J¨â­Ó¼Æ¦r«á¡A±N¨ä©M¦^¶Çµ¹¨Ï¥ÎªÌ
-    // ¦]¬°§Ú­Ì¤£½T©w¨Ï¥ÎªÌ·|µ¹¬Æ»ò¼Æ¦r¡A¥u¯à¥ý«ü©wµ{¦¡¹w¯d°O¾ÐÅéªÅ¶¡¡A©Ò¥H»Ý­n¥ý³]©w"ÅÜ¼Æ"
-    int number1; // ³]©wÅÜ¼Æªº°Ê§@¥s°µ"«Å§i"¡A»Ý¥ý«ü©w¸ê®Æ«¬§O¡A¦¹³B¥Îint·N«ä¬O¾ã¼Æ¡Anumber1ªº¦ì¸m¬OÅÜ¼Æ¦WºÙ(¥i¦Û¦æ©w¸q)
-    int number2, sum; // ­Y¬Û¦P¼Æ¾ÚÃþ§O¡A¥i¦b¦P¤@¦æ¥H³r¸¹¹j¶}°µ¤À¸¹
-    // ¦³¤F°O¾ÐÅéªÅ¶¡«á¡A§Ú­Ì­n¥ýµ¹¨Ï¥ÎªÌ´£¥Ü¡A½Ð¥L¿é¤J¼Æ¦r
+    /* æ•¸å­—æ“ä½œä»‹ç´¹ é–‹å§‹ */
+    // ä»¥å…©æ•¸å­—ç›¸åŠ ç¨‹å¼åšç¤ºç¯„ï¼Œç¨‹å¼åŠŸèƒ½æ˜¯è®“ä½¿ç”¨è€…åœ¨cmdè¼¸å…¥å…©å€‹æ•¸å­—å¾Œï¼Œå°‡å…¶å’Œå›žå‚³çµ¦ä½¿ç”¨è€…
+    // å› ç‚ºæˆ‘å€‘ä¸ç¢ºå®šä½¿ç”¨è€…æœƒçµ¦ç”šéº¼æ•¸å­—ï¼Œåªèƒ½å…ˆæŒ‡å®šç¨‹å¼é ç•™è¨˜æ†¶é«”ç©ºé–“ï¼Œæ‰€ä»¥éœ€è¦å…ˆè¨­å®š"è®Šæ•¸"
+    int number1; // è¨­å®šè®Šæ•¸çš„å‹•ä½œå«åš"å®£å‘Š"ï¼Œéœ€å…ˆæŒ‡å®šè³‡æ–™åž‹åˆ¥ï¼Œæ­¤è™•ç”¨intæ„æ€æ˜¯æ•´æ•¸ï¼Œnumber1çš„ä½ç½®æ˜¯è®Šæ•¸åç¨±(å¯è‡ªè¡Œå®šç¾©)
+    int number2, sum; // è‹¥ç›¸åŒæ•¸æ“šé¡žåˆ¥ï¼Œå¯åœ¨åŒä¸€è¡Œä»¥é€—è™Ÿéš”é–‹åšåˆ†è™Ÿ
+    // æœ‰äº†è¨˜æ†¶é«”ç©ºé–“å¾Œï¼Œæˆ‘å€‘è¦å…ˆçµ¦ä½¿ç”¨è€…æç¤ºï¼Œè«‹ä»–è¼¸å…¥æ•¸å­—
     printf("Please enter the first integer : ");
-    // ¦A¨Ó­n§â¨Ï¥ÎªÌ¿é¤Jªº¼Æ¦r©ñ¨ì°O¾ÐÅé¤º
-    scanf_s("%d", &number1); // ³o­Ófunction¤@¼Ë¨Ó¦Ûsrdio.h¡A¥i¥H±qÁä½LÅª¤J¸ê®Æ¡A¦]¬°¿é¤Jªº¸ê®Æ¥i¥H¦³«Ü¦hºØ¡A©Ò¥H»Ý«ü©w¸ê®ÆºØÃþ
-    // ¥H¦¹¬°¨Ò¡A²Ä¤@­Ó°Ñ¼Æ´N¬O¥Î¨Ó«ü©w¸ê®ÆºØÃþ %d ªº d ¬O«üdecimal¡A´N¬O§Ú­Ì¤é±`¥Í¬¡¥Îªº¤Q¶i¦ì¼Æ¦r
-    // ¦A¨Ó²Ä¤G­Ó°Ñ¼Æ´N¬O«ü©w­n¦s©ñªº¦ì¸m¡A¤]´N¬O°O¾ÐÅé¦ì¸mªºaddress¡A§Ú­Ì¥i¥H³z¹L & ³o­Ó²Å¸¹¡A¥¿¦¡¦WºÙ¬°"¨ú§}¹Bºâ¤l"¡A¥u­n§â &©ñ¦bÅÜ¼Æ«e­±¡A´N¥i¨ú±o¨ä°O¾ÐÅéªÅ¶¡ªºaddress
+    // å†ä¾†è¦æŠŠä½¿ç”¨è€…è¼¸å…¥çš„æ•¸å­—æ”¾åˆ°è¨˜æ†¶é«”å…§
+    scanf_s("%d", &number1); // é€™å€‹functionä¸€æ¨£ä¾†è‡ªsrdio.hï¼Œå¯ä»¥å¾žéµç›¤è®€å…¥è³‡æ–™ï¼Œå› ç‚ºè¼¸å…¥çš„è³‡æ–™å¯ä»¥æœ‰å¾ˆå¤šç¨®ï¼Œæ‰€ä»¥éœ€æŒ‡å®šè³‡æ–™ç¨®é¡ž
+    // ä»¥æ­¤ç‚ºä¾‹ï¼Œç¬¬ä¸€å€‹åƒæ•¸å°±æ˜¯ç”¨ä¾†æŒ‡å®šè³‡æ–™ç¨®é¡ž %d çš„ d æ˜¯æŒ‡decimalï¼Œå°±æ˜¯æˆ‘å€‘æ—¥å¸¸ç”Ÿæ´»ç”¨çš„åé€²ä½æ•¸å­—
+    // å†ä¾†ç¬¬äºŒå€‹åƒæ•¸å°±æ˜¯æŒ‡å®šè¦å­˜æ”¾çš„ä½ç½®ï¼Œä¹Ÿå°±æ˜¯è¨˜æ†¶é«”ä½ç½®çš„addressï¼Œæˆ‘å€‘å¯ä»¥é€éŽ & é€™å€‹ç¬¦è™Ÿï¼Œæ­£å¼åç¨±ç‚º"å–å€é‹ç®—å­"ï¼Œåªè¦æŠŠ &æ”¾åœ¨è®Šæ•¸å‰é¢ï¼Œå°±å¯å–å¾—å…¶è¨˜æ†¶é«”ç©ºé–“çš„address
 
-    // ¦P²Ä¤@­Ó¼Æ¦rªº§@ªk¡A§Ú­Ì¥i¥H½Ð¨Ï¥ÎªÌ¿é¤J²Ä¤G­Ó¼Æ¦r
+    // åŒç¬¬ä¸€å€‹æ•¸å­—çš„ä½œæ³•ï¼Œæˆ‘å€‘å¯ä»¥è«‹ä½¿ç”¨è€…è¼¸å…¥ç¬¬äºŒå€‹æ•¸å­—
     printf("Please enter the second integer : ");
     scanf_s("%d", &number2);
 
-    sum = number1 + number2; // + ¸¹´N¬O§Ú­Ì¤@¯ëªº¥[ªk¡A­nª`·Nªº¬O = ¡A¦bC»y¨¥¤¤¡A= ¥Nªíªº¬Oasssign¡A¬O½á­Èªº·N«ä¡C¬Ûµ¥ªº¼gªk¯d¨ì¤§«á±ø¥ó§PÂ_ªº³¹¸`¦A½Í
+    sum = number1 + number2; // + è™Ÿå°±æ˜¯æˆ‘å€‘ä¸€èˆ¬çš„åŠ æ³•ï¼Œè¦æ³¨æ„çš„æ˜¯ = ï¼Œåœ¨Cèªžè¨€ä¸­ï¼Œ= ä»£è¡¨çš„æ˜¯asssignï¼Œæ˜¯è³¦å€¼çš„æ„æ€ã€‚ç›¸ç­‰çš„å¯«æ³•ç•™åˆ°ä¹‹å¾Œæ¢ä»¶åˆ¤æ–·çš„ç« ç¯€å†è«‡
 
-    // ³Ì«á§Ú­Ì­n§âµ²ªG¦^¶Çµ¹¨Ï¥ÎªÌ
-    printf("Sum is %d.\n", sum); // %d ¤]¥i¥Î¦bprintf¡A¤£·|ª½±µ³Q¿é¥X¦bcmd¤¤¡A·|¥Î³r¸¹«á­±ªºÅÜ¼Æ±a¤J«á¤~¿é¥X
+    // æœ€å¾Œæˆ‘å€‘è¦æŠŠçµæžœå›žå‚³çµ¦ä½¿ç”¨è€…
+    printf("Sum is %d.\n", sum); // %d ä¹Ÿå¯ç”¨åœ¨printfï¼Œä¸æœƒç›´æŽ¥è¢«è¼¸å‡ºåœ¨cmdä¸­ï¼Œæœƒç”¨é€—è™Ÿå¾Œé¢çš„è®Šæ•¸å¸¶å…¥å¾Œæ‰è¼¸å‡º
 
-    // ¦h­Ó¼Æ¦r®É¥i¥H§â¨C¦¸¿é¤JªºªF¦è³£ª½±µ¥[Á`¦^sum´N¦n
-    // ¥D­n¦Ò¶q ¥¿½T©Ê¡BºûÅ@©Ê¡B®Ä²v¡BÂX®i©Ê
+    // å¤šå€‹æ•¸å­—æ™‚å¯ä»¥æŠŠæ¯æ¬¡è¼¸å…¥çš„æ±è¥¿éƒ½ç›´æŽ¥åŠ ç¸½å›žsumå°±å¥½
+    // ä¸»è¦è€ƒé‡ æ­£ç¢ºæ€§ã€ç¶­è­·æ€§ã€æ•ˆçŽ‡ã€æ“´å±•æ€§
 
-    /* ¼Æ¦r¾Þ§@¤¶²Ð µ²§ô */
+    /* æ•¸å­—æ“ä½œä»‹ç´¹ çµæŸ */
 
-    /* ¸ê®Æ«¬§O¤¶²Ð ¶}©l */
+    /* è³‡æ–™åž‹åˆ¥ä»‹ç´¹ é–‹å§‹ */
     /* 
-    ¸ê®Æ³B²z¥D­n·|¦³¨â­Ó°ÝÃD: °O¾Ð »P ­pºâ
-    «¬§O¨M©w¤FÀx¦s©M­pºâ¤è¦¡
+    è³‡æ–™è™•ç†ä¸»è¦æœƒæœ‰å…©å€‹å•é¡Œ: è¨˜æ†¶ èˆ‡ è¨ˆç®—
+    åž‹åˆ¥æ±ºå®šäº†å„²å­˜å’Œè¨ˆç®—æ–¹å¼
     
-    Àx¦sªº³¡¤À:
-    ¹q¸£ªº°O¾ÐÅéªÅ¶¡¬O¥H ¦ì¤¸²Õ(byte)¬°³æ¦ì
-    ¤@­Ó¦ì¤¸²Õ(byte)¥Ñ¦h­Ó¦ì¤¸(bit)©Òºc¦¨
-    ¢z¢w¢w¢w¢w¢w¢{  ¢z¢w¢w¢w¢w¢s¢w¢w¢w¢w¢s¢w¢w¢w¢w¢s¢w¢w¢w¢w¢s¢w¢w¢w¢w¢s¢w¢w¢w¢w¢s¢w¢w¢w¢w¢s¢w¢w¢w¢w¢{
-    ¢x   byte   ¢x=¢x   bit   ¢x   bit   ¢x   bit   ¢x   bit   ¢x   bit   ¢x   bit   ¢x   bit   ¢x   bit   ¢x(¨C­Óbit ¬O 0©Î1)
-    ¢|¢w¢w¢w¢w¢w¢}  ¢|¢w¢w¢w¢w¢r¢w¢w¢w¢w¢r¢w¢w¢w¢w¢r¢w¢w¢w¢w¢r¢w¢w¢w¢w¢r¢w¢w¢w¢w¢r¢w¢w¢w¢w¢r¢w¢w¢w¢w¢}(¤§«á¥ÎAI°µ)
-    ¦UºØ¸ê®Æ³£¥i¥HÂà´«¦¨¤@¦ê0©M1ªº§Ç¦Cªí¥Ü
-    ³o´N¬O¬°¬Æ»ò¥ô¦ó®æ¦¡ÀÉ®×(¤å¦r¡B¹Ï¤ù¡B¼v¤ùµ¥)³£¥i¥H³Q¦s¦bµwºÐ¤Wªº­ì¦]
-    ¦WºÙ ¤j¤p(¦ì¤¸²Õ)¡A¨Ì¹ê§@©w¸q¦Ó¦³¤£¦P  ¨Ò¤l
+    å„²å­˜çš„éƒ¨åˆ†:
+    é›»è…¦çš„è¨˜æ†¶é«”ç©ºé–“æ˜¯ä»¥ ä½å…ƒçµ„(byte)ç‚ºå–®ä½
+    ä¸€å€‹ä½å…ƒçµ„(byte)ç”±å¤šå€‹ä½å…ƒ(bit)æ‰€æ§‹æˆ
+    â”Œâ”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”¬â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”
+    â”‚   byte   â”‚=â”‚   bit   â”‚   bit   â”‚   bit   â”‚   bit   â”‚   bit   â”‚   bit   â”‚   bit   â”‚   bit   â”‚(æ¯å€‹bit æ˜¯ 0æˆ–1)
+    â””â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”´â”€â”€â”€â”€â”´â”€â”€â”€â”€â”´â”€â”€â”€â”€â”´â”€â”€â”€â”€â”´â”€â”€â”€â”€â”´â”€â”€â”€â”€â”´â”€â”€â”€â”€â”˜(ä¹‹å¾Œç”¨AIåš)
+    å„ç¨®è³‡æ–™éƒ½å¯ä»¥è½‰æ›æˆä¸€ä¸²0å’Œ1çš„åºåˆ—è¡¨ç¤º
+    é€™å°±æ˜¯ç‚ºç”šéº¼ä»»ä½•æ ¼å¼æª”æ¡ˆ(æ–‡å­—ã€åœ–ç‰‡ã€å½±ç‰‡ç­‰)éƒ½å¯ä»¥è¢«å­˜åœ¨ç¡¬ç¢Ÿä¸Šçš„åŽŸå› 
+    åç¨± å¤§å°(ä½å…ƒçµ„)ï¼Œä¾å¯¦ä½œå®šç¾©è€Œæœ‰ä¸åŒ  ä¾‹å­
     short int 2* 32
     int 4* 32
     long int 4* 32
@@ -104,38 +69,38 @@ int main(void) // »Ý©w¸q¦¹function°õ¦æ§¹­n¦^¶Çªº¸ê®Æ«¬§O(¦¹³B¥Hint¬°¨Ò)¡Avoid ªº
     float 4* 3.2
     double 8* 3.2
     void ?
-    (°µ¦¨ªí®æ¤ñ¸û¦n²z¸Ñ)
-    ¨ä¤¤®t²§¦b©ó·N²[ªº¤£¦P¡B­ì²z¤£¦P¡B­È½d³ò¤£¦P¡Bºë½T«×¤£¦P¬Æ¦Ü¦³µL¥¿­t¸¹
-    ¥i¥Îsizeof ¬d¬Ý½T¤Á¸ê®Æ¤j¤p
+    (åšæˆè¡¨æ ¼æ¯”è¼ƒå¥½ç†è§£)
+    å…¶ä¸­å·®ç•°åœ¨æ–¼æ„æ¶µçš„ä¸åŒã€åŽŸç†ä¸åŒã€å€¼ç¯„åœä¸åŒã€ç²¾ç¢ºåº¦ä¸åŒç”šè‡³æœ‰ç„¡æ­£è² è™Ÿ
+    å¯ç”¨sizeof æŸ¥çœ‹ç¢ºåˆ‡è³‡æ–™å¤§å°
     */
     printf("long int:  %d \n", sizeof(long int));
     
-    /* ¸ê®Æ«¬§O¤¶²Ð µ²§ô */
+    /* è³‡æ–™åž‹åˆ¥ä»‹ç´¹ çµæŸ */
 
-    /* ÅÜ¼Æ©R¦W¤¶²Ð ¶}©l */
+    /* è®Šæ•¸å‘½åä»‹ç´¹ é–‹å§‹ */
 
     /*
-    ¥ô¦óÅÜ¼Æ¦b¨Ï¥Î«e¡A¬Ò¶·«Å§i©Î©w¸q
-    ¦bC»y¨¥ªº«Å§i¦Ü¤Ö»Ý­nµ¹©w¸ê®Æ«¬§O¡BÅÜ¼Æ¦WºÙ³o¨âºØ¸ê°T¡A¨Ã¥H¤À¸¹µ²§À
-    ¼gªk¦p¤U:
-    ¸ê®Æ«¬§O ÅÜ¼Æ¦WºÙ;
+    ä»»ä½•è®Šæ•¸åœ¨ä½¿ç”¨å‰ï¼Œçš†é ˆå®£å‘Šæˆ–å®šç¾©
+    åœ¨Cèªžè¨€çš„å®£å‘Šè‡³å°‘éœ€è¦çµ¦å®šè³‡æ–™åž‹åˆ¥ã€è®Šæ•¸åç¨±é€™å…©ç¨®è³‡è¨Šï¼Œä¸¦ä»¥åˆ†è™Ÿçµå°¾
+    å¯«æ³•å¦‚ä¸‹:
+    è³‡æ–™åž‹åˆ¥ è®Šæ•¸åç¨±;
     int num;
-    ¦¹¬° ¥¼©w¸q¦æ¬°
-    «Å§i¦P®É¤]¥iª½±µ«ü©wªì©l­È¡AºÙ¬°ªì©l¤Æ
-    ¼gªk¦p¤U:
-    ¸ê®Æ«¬§O ÅÜ¼Æ¦WºÙ = ªì©l­È;
+    æ­¤ç‚º æœªå®šç¾©è¡Œç‚º
+    å®£å‘ŠåŒæ™‚ä¹Ÿå¯ç›´æŽ¥æŒ‡å®šåˆå§‹å€¼ï¼Œç¨±ç‚ºåˆå§‹åŒ–
+    å¯«æ³•å¦‚ä¸‹:
+    è³‡æ–™åž‹åˆ¥ è®Šæ•¸åç¨± = åˆå§‹å€¼;
     int num  = 0;
-    ³]0¬O»Ý­nÃB¥~¹Bºâªº¡A­Y¨S¦³¯S®í»Ý¨D¥i¥H¤£¥Îªì©l¤Æ
-    ÅÜ¼Æ¦WºÙªº©R¦W¬O¦³­­¨îªº
-    1.¤£¯à¥H¼Æ¦r¶}ÀY
-    2.¤j¤p¼g¥Nªí¤£¦P©R¦W¡A¨Ò¦pnum©MNum¬O¨â­Ó¤£¦PªºÅÜ¼Æ
-    3.¥u¯à¥H­^¤å¡B¼Æ¦r¡B©³½u©R¦W¡A¤£¤¹³\¨ä¾l¦r²Å
-    4.¤£¥i¨Ï¥Î«O¯d¦r¡A«O¯d¦rªº·N«ä¬O³o»y¨¥¥Î¨Ó©w¸q¯S®í¥Î³~ªº¦WºÙ©Îµ{¦¡¦³³\¦h¤w¸g¼g¦nªº±`¥Îfunction¡A¬°¤F¤£»P¥L­Ì½Ä¬ð¡A¤£¥i¨Ï¥Î¯S©w¦WºÙ¡A¦pint©Îprintf
-    ¸Ô²Ó¤¶²Ð½Ð°Ñ¦Ò³o¸Ì: https://pclevinblog.pixnet.net/blog/post/314560420-c-%E8%AA%9E%E8%A8%80%E5%8F%8A%E9%97%9C%E9%8D%B5%E5%AD%97-reserved-keywords
+    è¨­0æ˜¯éœ€è¦é¡å¤–é‹ç®—çš„ï¼Œè‹¥æ²’æœ‰ç‰¹æ®Šéœ€æ±‚å¯ä»¥ä¸ç”¨åˆå§‹åŒ–
+    è®Šæ•¸åç¨±çš„å‘½åæ˜¯æœ‰é™åˆ¶çš„
+    1.ä¸èƒ½ä»¥æ•¸å­—é–‹é ­
+    2.å¤§å°å¯«ä»£è¡¨ä¸åŒå‘½åï¼Œä¾‹å¦‚numå’ŒNumæ˜¯å…©å€‹ä¸åŒçš„è®Šæ•¸
+    3.åªèƒ½ä»¥è‹±æ–‡ã€æ•¸å­—ã€åº•ç·šå‘½åï¼Œä¸å…è¨±å…¶é¤˜å­—ç¬¦
+    4.ä¸å¯ä½¿ç”¨ä¿ç•™å­—ï¼Œä¿ç•™å­—çš„æ„æ€æ˜¯é€™èªžè¨€ç”¨ä¾†å®šç¾©ç‰¹æ®Šç”¨é€”çš„åç¨±æˆ–ç¨‹å¼æœ‰è¨±å¤šå·²ç¶“å¯«å¥½çš„å¸¸ç”¨functionï¼Œç‚ºäº†ä¸èˆ‡ä»–å€‘è¡çªï¼Œä¸å¯ä½¿ç”¨ç‰¹å®šåç¨±ï¼Œå¦‚intæˆ–printf
+    è©³ç´°ä»‹ç´¹è«‹åƒè€ƒé€™è£¡: https://pclevinblog.pixnet.net/blog/post/314560420-c-%E8%AA%9E%E8%A8%80%E5%8F%8A%E9%97%9C%E9%8D%B5%E5%AD%97-reserved-keywords
 
     */
-    /* ÅÜ¼Æ©R¦W¤¶²Ð µ²§ô */
+    /* è®Šæ•¸å‘½åä»‹ç´¹ çµæŸ */
 
 
-    return 0;// ·í function °õ¦æµ²§ô®É¡A±N 0(¥Nªí°õ¦æ§¹²¦) ¦^¶Çµ¹§@·~¨t²Î¡C ·í¤µ·sª©¥»ªºcompiler·|¦b¨S¼greturn®É¡A¦Û°Ê¸É¤W return 0¡A©Ò¥H­YµL¯S®í±¡§Î¥i¬Ù²¤¤£¼g
-} // °Ï¶ôµ²§ô
+    return 0;// ç•¶ function åŸ·è¡ŒçµæŸæ™‚ï¼Œå°‡ 0(ä»£è¡¨åŸ·è¡Œå®Œç•¢) å›žå‚³çµ¦ä½œæ¥­ç³»çµ±ã€‚ ç•¶ä»Šæ–°ç‰ˆæœ¬çš„compileræœƒåœ¨æ²’å¯«returnæ™‚ï¼Œè‡ªå‹•è£œä¸Š return 0ï¼Œæ‰€ä»¥è‹¥ç„¡ç‰¹æ®Šæƒ…å½¢å¯çœç•¥ä¸å¯«
+} // å€å¡ŠçµæŸ
