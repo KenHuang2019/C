@@ -51,5 +51,6 @@ int main() {
     其差異在於意涵的不同、原理不同、值範圍不同、精確度不同甚至有無正負號，請參照README.md
     實作上可用sizeof 查看確切資料大小
     */
-    printf("int:  %d \n", sizeof(sum));
+    printf("int 資料大小:  %d \n", sizeof(sum));
+    printf("強制型別轉換成 long int 資料大小:  %d \n", sizeof( (long int) sum ) ); // 在變數要使用前加上 (資料型別) 可做到強制型別轉換
 }
