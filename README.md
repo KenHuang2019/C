@@ -79,6 +79,9 @@
 >    * 跳脫字元 Ex: `\n`
 >    * 跨行輸出
 >    * format語法與specifier character `printf("代入數字%d輸出", 1)`
+### 資料型別與變數
+> * [範例原始碼 2_data_type_and_variables.c](https://github.com/KenHuang2019/C/blob/master/2_data_type_and_variables.c)
+>    * 變數命名，在C語言的宣告至少需要給定資料型別、變數名稱這兩種資訊，並以分號結尾。寫法：資料型別 變數名稱;　`int num;`
 ```
 章節原始碼範例:
 
