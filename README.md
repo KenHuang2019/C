@@ -67,9 +67,22 @@
 ---
 ## C語言基本語法
 這邊僅記錄重點，詳細敘述會用comment寫在範例原始碼
-### 理解C語言基礎架構
+### C語言程式基礎架構
 > * [範例原始碼 0_Simple_script.c](https://github.com/KenHuang2019/C/blob/master/0_simple_script.c)
+>    * 註解寫法 `//這是單行註解` `/* 這種是多行註解 */`
 >    * 引用函式庫 `#include <標準函式庫名稱>`
 >    * 理解 `main()` 架構和程式區塊
 >    * 使用 `printf()` 輸出字串
 >    * 理解 `return` 用途
+### 字符輸出
+> * [範例原始碼 1_printf.c](https://github.com/KenHuang2019/C/blob/master/1_printf.c)
+>    * 跳脫字元 Ex: `\n`
+>    * 跨行輸出
+>    * format語法與specifier character `printf("代入數字%d輸出", 1)`
+```
+章節原始碼範例:
+
+### 章節標題
+> * [範例原始碼 程式名稱](source_code_URL)
+>    * 重點紀錄 `重要函數()`
+```
