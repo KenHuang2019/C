@@ -91,18 +91,20 @@
 >   儲存的部分:<br>
 >   電腦的記憶體空間是以 位元組(byte)為單位<br>
 >   一個位元組(byte)由多個位元(bit)所構成<br>
->![byte_diagram](https://github.com/KenHuang2019/C/blob/master/images/2_%E8%B3%87%E6%96%99%E5%9E%8B%E5%88%A5.png)
+>![byte_diagram](https://github.com/KenHuang2019/C/blob/master/images/2_%E8%B3%87%E6%96%99%E5%9E%8B%E5%88%A5.png)<br>
 >   每個bit不是0就是1，所以各種資料都可以轉換成一串01的序列表示<br>
 >   這就是為甚麼任何格式檔案(文字、圖片、影片等)都可以被存在硬碟上的原因<br>
 >   常用的型別如下<br>
-|    名稱   | 大小(位元組) |  例子  |
-|-----------|:-----------:|-- ---:|
-| short int |      2      |   32  |
-| int       |      4      |   32  |
-| long int  |      4      |   32  |
-| char      |      1      |   '3' |
-| float     |      4      |   3.2 |
-| double    |      8      |   3.2 |
+
+|    名稱   | 大小(位元組) |   例子  |
+|-----------|:-----------:|-------:|
+| short int |      2      |   32   |
+| int       |      4      |   32   |
+| long int  |      4      |   32   |
+| char      |      1      |   '3'  |
+| float     |      4      |   3.2  |
+| double    |      8      |   3.2  |
+
 (依實際作業系統不同可能有微小差異)
 ```
 章節原始碼範例:
