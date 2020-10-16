@@ -181,7 +181,7 @@ else
 > * [範例原始碼 6_switch.c](https://github.com/KenHuang2019/C/blob/master/6_switch.c)
 >    * if ... else if ... else ... 的另一種寫法，但語法上更簡潔，不需要重複寫被判斷的變數名稱
 ```c
-int a = 'a';
+char a = 'a';
 switch (a) {
     case 'c':
         print("a is c\n");
