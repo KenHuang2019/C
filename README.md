@@ -83,6 +83,7 @@
 >    * 跳脫字元 Ex: `\n`
 >    * 跨行輸出
 >    * format語法與specifier character `printf("代入數字%d輸出", 1)`
+>    * format格式指定 `printf("a=%7.2f", 1.33333); // 結果為 1.33`
 
 ### 資料型別與變數
 > * [範例原始碼 2_data_type_and_variables.c](https://github.com/KenHuang2019/C/blob/master/2_data_type_and_variables.c)
