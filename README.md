@@ -144,12 +144,14 @@
 >    * 入門可以從畫flowchart開始 (single-entry / single-exit control)
 ![condition_statement_flowchart](https://github.com/KenHuang2019/C/blob/master/images/5_condition_statement_flowchart.png)
 >    * 再把 flowchart 寫成 presudocode  
->	     * if Condition // 條件 成立  
-> 	            做 ...  
->	            printf("...")  
->	     * else  // 條件 不成立  
->   	        做 ...  
->	            printf("...")  
+>       `c
+>       if Condition // 條件 成立  
+>           做 ...  
+>           printf("...")  
+>       else  // 條件 不成立  
+>           做 ...  
+>           printf("...")  
+>       `
 >    * 再把 presudocode 寫成正規的 sourcecode
 >    * 條件敘述的另一種寫法：(condition) ? (true) : (false); `level = grade >= 60 ? puts("Nice") : puts("Bad"); // puts()是單純輸出文字在 Terminal 上`
 
