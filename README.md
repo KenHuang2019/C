@@ -69,6 +69,7 @@
 這邊僅記錄重點，詳細敘述會用comment寫在範例原始碼
 ### C語言程式基礎架構
 > * [範例原始碼 0_Simple_script.c](https://github.com/KenHuang2019/C/blob/master/0_simple_script.c)
+>    * 註解寫法 `//這是單行註解` `/* 這種是多行註解 */`
 >    * 引用函式庫 `#include <標準函式庫名稱>`
 >    * 理解 `main()` 架構和程式區塊
 >    * 使用 `printf()` 輸出字串
@@ -79,7 +80,7 @@
 >    * 跨行輸出
 >    * format語法與specifier character `printf("代入數字%d輸出", 1)`
 ```
-章節範例:
+章節原始碼範例:
 
 ### 章節標題
 > * [範例原始碼 程式名稱](source_code_URL)
