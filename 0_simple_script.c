@@ -16,5 +16,5 @@ int main(void) // 需定義此function執行完要回傳的資料型別(此處�
         "Hello World!" // 此為字串寫法，通常用雙引號 " 包住資料
     );
 
-    return 0;// 當 function 執行結束時，將 0(代表執行完畢) 回傳給作業系統。 當今新版本的compiler會在沒寫return時，自動補上 return 0，所以若無特殊情形可省略不寫
+    return 0;// 當 function 執行結束時，將 0(代表執行完畢) 回傳給作業系統。 當今新版本的compiler會在沒寫return時，自動補上 return 0，所以若無特殊情形可省略不寫。另外 -1通常表示異常，但0以外的不常使用。
 } // 區塊結束
