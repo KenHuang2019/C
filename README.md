@@ -64,8 +64,8 @@
 ![gcc_version_image](https://github.com/KenHuang2019/C/blob/master/images/gcc_version.png)
 ##### 編譯語法： `gcc -o <執行檔名稱.exe> <原始碼檔案名稱.c>`
 ---
-### C語言基本語法
-#### 0 Simple script
+## C語言基本語法
+### 0 Simple script
  * 理解C語言基礎架構
      * 學習引用函式庫 `#include <標準函式庫名稱>`
      * 使用 `printf()` 輸出字串
