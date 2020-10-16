@@ -14,7 +14,7 @@ int main(){
 
     // 根據不同溫度有不同反饋
     if ( f >= 90 ) {
-        if ( f > 95 )
+        if ( f > 95 ) // 此為巢狀關係，需同時滿足前面的條件才會執行，若需執行的code僅有一行，可省略{}
             printf("super hot\n"); // 華氏溫度大於95度時，輸出 super hot
         else
             printf("a little hot\n"); // 華氏溫度介於90~95度時，輸出 a littlehot
