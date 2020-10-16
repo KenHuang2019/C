@@ -143,7 +143,7 @@
 >    * 近似於口語的 如果... 或者... 不然... `if ( 表示式表達條件 ) { 程式執行特定功能 }`
 >    * 入門可以從畫flowchart開始 (single-entry / single-exit control)
 ![condition_statement_flowchart](https://github.com/KenHuang2019/C/blob/master/images/5_condition_statement_flowchart.png)
->    * 再把 flowchart 寫成 presudocode
+>    * 再把 flowchart 寫成 presudocode <br>
 	if Condition // 條件 成立 <br>
 		做 ... <br>
 	    printf("...") <br>
