@@ -60,7 +60,13 @@
 ### 編譯器與開發環境
 ##### 我使用 Windows 10 新出的 WSL 子系統功能，安裝 Ubuntu 18.04 版本的 Linux 作業系統進行練習
 ##### WSL 安裝可以參考這連結：https://docs.microsoft.com/zh-tw/windows/wsl/install-win10
+##### Ubuntu 18.04 Linux 有內建 gcc 編譯器，在Terminal 輸入 $ `gcc  --version` 即可確認是否有安裝此編譯器、查看版本資訊
 ![gcc_version_image](https://github.com/KenHuang2019/C/blob/master/images/gcc_version.png)
-
+##### 編譯語法： `gcc -o <執行檔名稱.exe> <原始碼檔案名稱.c>`
 ---
-
+### C語言基本語法
+#### 0 Simple script
+ * 理解C語言基礎架構
+     * 學習引用函式庫 `#include <標準函式庫名稱>`
+     * 使用 `printf()` 輸出字串
+     * 掌握跳脫字元概念
