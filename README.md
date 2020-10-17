@@ -223,7 +223,7 @@ int main(){
 ```
 ### 流程控制 - do-while 迴圈敘述 ( do { ... } while (表達式); )
 > * [範例原始碼 8_do_while.c](https://github.com/KenHuang2019/C/blob/master/8_do_while.c)
->    * 類似於while迴圈，但會先執行特定功能才判斷表達式的狀態
+>    * 類似於while迴圈，但會先執行特定功能才判斷表達式的狀態 <br>
 ![do_while_statement_flowchart](https://github.com/KenHuang2019/C/blob/master/images/8_do_while_loop_flowchart.png)
 ```c
 #include <stdio.h>
@@ -238,6 +238,7 @@ int main(){
 ### 流程控制 - for 迴圈敘述 ( for (初始值; 條件式; 迴圈式;) { ... } )
 > * [範例原始碼 9_for.c](https://github.com/KenHuang2019/C/blob/master/9_for.c)
 >    * 與while和do-while迴圈不同的地方在於，for迴圈適用於已知執行次數的狀態
+![for_statement_flowchart](https://github.com/KenHuang2019/C/blob/master/images/9_for_loop_flowchart.png)
 ```c
 int main(){
     for (int a = 1; a <= 3; a++) // for 後面的()內需要依序填入「初始值」、「條件式」、「迴圈式」
@@ -249,10 +250,12 @@ int main(){
 ### 流程控制 - break 敘述
 > * [範例原始碼 10_break.c](https://github.com/KenHuang2019/C/blob/master/10_break.c)
 >    * 直接無視終止條件跳出迴圈
+![break_statement_flowchart](https://github.com/KenHuang2019/C/blob/master/images/10_break_flowchart.png)
 
 ### 流程控制 - continue 敘述
 > * [範例原始碼 11_continue.c](https://github.com/KenHuang2019/C/blob/master/11_continue.c)
 >    * 略過該迴圈剩下程式，直接進入下個迴圈
+![continue_statement_flowchart](https://github.com/KenHuang2019/C/blob/master/images/11_continue_flowchart.png)
 
 ### 函式 ( 回傳值型別 函式名稱 (參數型別 參數名稱, ...) { ... reutn 回傳值; } )
 > * [範例原始碼 12_function.c](https://github.com/KenHuang2019/C/blob/master/12_function.c)
