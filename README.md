@@ -142,7 +142,7 @@
 > * [範例原始碼 5_if_else.c](https://github.com/KenHuang2019/C/blob/master/5_if_else.c)
 >    * 近似於口語的 如果... 或者... 不然... `if ( 表示式表達條件 ) { 程式執行特定功能 }`
 >    * 入門可以從畫flowchart開始 (single-entry / single-exit control)
-![condition_statement_flowchart](https://github.com/KenHuang2019/C/blob/master/images/5_condition_statement_flowchart.png)
+![if_statement_flowchart](https://github.com/KenHuang2019/C/blob/master/images/5_if_flowchart.png)
 >    * 再把 flowchart 寫成 presudocode  
 >        * if Condition // 條件 成立  
 >               做 ...  
@@ -184,7 +184,8 @@ int main(){
 ### 流程控制 - switch 條件敘述 ( switch (變數) { case 條件: ...; break; case 條件: ...; break; default: ...; } )
 > * [範例原始碼 6_switch.c](https://github.com/KenHuang2019/C/blob/master/6_switch.c)
 >    * if ... else if ... else ... 的另一種寫法，但語法上更簡潔，不需要重複寫被判斷的變數名稱及部分運算子
->    * 不是用於多重數值區間判斷，比較適合單一變數的多種狀態判斷
+>    * 不適用於多重數值區間判斷，比較適合單一變數的多種等於狀態判斷
+![switch_statement_flowchart](https://github.com/KenHuang2019/C/blob/master/images/6_switch_flowchart.png)
 ```c
 #include <stdio.h>
 int main(){
@@ -209,6 +210,7 @@ int main(){
 >    * while 迴圈近似於口語的「當」表達式成立(也就是真偽值是1)，就做...
 >    * while 迴圈適用於「不確定會執行次數的狀態」
 >    * 須注意程式寫法是否能滿足終止條件，否則會產生無窮迴圈
+![while_statement_flowchart](https://github.com/KenHuang2019/C/blob/master/images/7_while_loop_flowchart.png)
 ```c
 #include <stdio.h>
 int main(){
@@ -222,6 +224,7 @@ int main(){
 ### 流程控制 - do-while 迴圈敘述 ( do { ... } while (表達式); )
 > * [範例原始碼 8_do_while.c](https://github.com/KenHuang2019/C/blob/master/8_do_while.c)
 >    * 類似於while迴圈，但會先執行特定功能才判斷表達式的狀態
+![do_while_statement_flowchart](https://github.com/KenHuang2019/C/blob/master/images/8_do_while_loop_flowchart.png)
 ```c
 #include <stdio.h>
 int main(){
@@ -243,8 +246,16 @@ int main(){
     }
 }
 ```
+### 流程控制 - break 敘述
+> * [範例原始碼 10_break.c](https://github.com/KenHuang2019/C/blob/master/10_break.c)
+>    * 直接無視終止條件跳出迴圈
+
+### 流程控制 - continue 敘述
+> * [範例原始碼 11_continue.c](https://github.com/KenHuang2019/C/blob/master/11_continue.c)
+>    * 略過該迴圈剩下程式，直接進入下個迴圈
+
 ### 函式 ( 回傳值型別 函式名稱 (參數型別 參數名稱, ...) { ... reutn 回傳值; } )
-> * [範例原始碼 10_function.c](https://github.com/KenHuang2019/C/blob/master/10_function.c)
+> * [範例原始碼 12_function.c](https://github.com/KenHuang2019/C/blob/master/12_function.c)
 >    * 基於數學上的函數概念，將片段程式設計為獨立模組，具有特定功能
 >    * 通常目的都是為了「重複利用」特定功能，或是「讓程式碼更好閱讀」
 >    * 在主程式中，需要先被定義才能呼叫來做使用
