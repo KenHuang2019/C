@@ -169,35 +169,54 @@
 >    * 優先順序上，算術 > 關係 > 邏輯 > 賦值 運算子
 >    * 若條件成立，且須執行程式碼僅有一行可省略條件敘述之後的{}，Ex:
 ```c
-int a = 5;
-if(a < 5)
-    printf("a < 5\n");
-else if(a > 5)
-    printf("a > 5\n");
-else
-    printf("a = 5\n");
+#include <stdio.h>
+int main(){
+    int a = 5;
+    if(a < 5)
+        printf("a < 5\n");
+    else if(a > 5)
+        printf("a > 5\n");
+    else
+        printf("a = 5\n");
+}
 ```
-### 流程控制 - switch 條件敘述 ( switch (變數) case 條件: ...; break; case 條件: ...; break; default: ...;)
+### 流程控制 - switch 條件敘述 ( switch (變數) { case 條件: ...; break; case 條件: ...; break; default: ...; } )
 > * [範例原始碼 6_switch.c](https://github.com/KenHuang2019/C/blob/master/6_switch.c)
 >    * if ... else if ... else ... 的另一種寫法，但語法上更簡潔，不需要重複寫被判斷的變數名稱及部分運算子
 >    * 不是用於多重數值區間判斷，比較適合單一變數的多種狀態判斷
 ```c
-char a = 'a';
-switch (a) {
-    case 'c':
-        print("a is c\n");
-        break;
-    case 'b':
-        print("a is b\n");
-        break;
-    case 'a':
-        print("a is a\n");
-        break;
-    default:
-        printf("a is nothing\n");
+#include <stdio.h>
+int main(){
+    char a = '3';
+    switch (a) {
+        case '1':
+            printf("a is 1\n");
+            break;
+        case '2':
+            printf("a is 2\n");
+            break;
+        case '3':
+            printf("a is 3\n");
+            break;
+        default:
+            printf("a is not 1 or 2 or 3\n");
+}
 ```
-
-
+### 流程控制 - while 迴圈敘述 ( while (表達式) { ... })
+> * [範例原始碼 7_while.c](https://github.com/KenHuang2019/C/blob/master/7_while.c)
+>    * 迴圈可重複執行特定功能，直到表達式條件成立
+>    * while 迴圈適用於不確定會執行幾次的狀態
+>    * 須注意程式寫法是否能滿足終止條件，否則會產生無窮迴圈
+```c
+#include <stdio.h>
+int main(){
+    int a = 1;
+    while (a == 3) { // 當a等於3時停止
+        printf("a = %d\n", a); // 輸出每次迴圈當下的數值
+        a++; // 使a在每次迴圈結束前+1
+    }
+}
+```
 
 ```
 章節原始碼範例:
