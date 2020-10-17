@@ -13,6 +13,7 @@ int main(){
     // 因為不確定使用者猜幾次才會中正解，所以使用while loop
     while ( i != a) // 「當」使用者輸入的數字 不等於 正解(也就是錯誤答案)
     {
+    {
         printf("Wrong anser. Please guess again:\n"); // 給使用者錯誤提示
         scanf("%d", &i); // 接收使用者猜的數字
     }
