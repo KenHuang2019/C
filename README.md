@@ -88,6 +88,7 @@
 ### 資料型別與變數
 > * [範例原始碼 2_data_type_and_variables.c](https://github.com/KenHuang2019/C/blob/master/2_data_type_and_variables.c)
 >    * 變數命名寫法：資料型別 變數名稱;　`int num;` ，**切記要讓名稱有意義，要能幫助他人閱讀程式**
+>    * 變數命名若使用多個英文單字，第二個單字開始用大寫開頭 Ex: `int maxScore=0;`
 >    * 初始化寫法：資料型別 變數名稱 = 初始值;　`int num = 0;`
 >    * 使用 `scanf()` 接收使用者輸入
 >    * 使用 `sizeof()` 查看變數內的資料大小
