@@ -2,7 +2,7 @@
 
 ###### 這個 Repository 會用來記錄學習C的過程，除了聽老師上課、我也看這系列教學影片：<br> 
 ###### https://www.youtube.com/playlist?list=PLY_qIufNHc293YnIjVeEwNDuqGo8y2Emx <br> 
-###### 會綜合兩者的內容記錄重點，再附上練習過程用的source code
+###### 我會綜合兩者的內容來記錄重點，再附上練習過程用的source code
 ---
 ### 程式語言簡介
 在學習C語言之前，先簡單了解語言的用途，才能知道程式能做到那些事情
