@@ -204,20 +204,33 @@ int main(){
 ```
 ### 流程控制 - while 迴圈敘述 ( while (表達式) { ... })
 > * [範例原始碼 7_while.c](https://github.com/KenHuang2019/C/blob/master/7_while.c)
->    * 迴圈可重複執行特定功能，直到表達式條件成立
->    * while 迴圈適用於不確定會執行幾次的狀態
+>    * 迴圈可重複執行特定功能
+>    * while 迴圈近似於口語的「當」表達式成立(也就是真偽值是1)，就做...
+>    * while 迴圈適用於「不確定會執行次數的狀態」
 >    * 須注意程式寫法是否能滿足終止條件，否則會產生無窮迴圈
 ```c
 #include <stdio.h>
 int main(){
     int a = 1;
-    while (a == 3) { // 當a等於3時停止
+    while (a != 3) { // 當a不等於3時，執行以下程式
         printf("a = %d\n", a); // 輸出每次迴圈當下的數值
         a++; // 使a在每次迴圈結束前+1
     }
 }
 ```
-
+### 流程控制 - do-while 迴圈敘述 ( do { ... } while (表達式); )
+> * [範例原始碼 8_do_while.c](https://github.com/KenHuang2019/C/blob/master/8_do_while.c)
+>    * 類似於while迴圈，但會先執行特定功能才判斷表達式的狀態
+```c
+#include <stdio.h>
+int main(){
+    int a = 1;
+    do { // 無論如何先執行以下程式
+        printf("a = %d\n", a); // 輸出每次迴圈當下的數值
+        a++; // 使a在每次迴圈結束前+1
+    } while (a != 3); // 執行到這行才決定是否重複執行，和上方相比，因為比對不等於3之前就先做+1，所以迴圈會少做一次就滿足結束迴圈的條件
+}
+```
 ```
 章節原始碼範例:
 
