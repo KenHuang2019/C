@@ -120,6 +120,7 @@
 >    * 常見編碼方式 [ASCII](https://zh.wikipedia.org/zh-tw/ASCII) 、 [Big-5](https://zh.wikipedia.org/zh-tw/%E5%A4%A7%E4%BA%94%E7%A2%BC) 、 [UTF-8](https://zh.wikipedia.org/zh-tw/UTF-8)
 >    * 字元運算 `printf('A' + 1) // B`
 >    * 大小寫轉換 `printf('A' + 32) // a`
+>    * 可使用 getchar() 取得ASCII code Ex: `getchar('A') // 66`
 
 ### 運算元、運算子、表示式
 > * [範例原始碼 4_operator_and_expression.c](https://github.com/KenHuang2019/C/blob/master/4_operator_and_expression.c)
