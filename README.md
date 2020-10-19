@@ -285,6 +285,40 @@ int main(){
     }
 }
 ```
+### 標準函式庫
+> * [範例原始碼 13_library.c](https://github.com/KenHuang2019/C/blob/master/example/13_library.c)
+>    * 將很多常用到的函式寫在標頭檔裡，所以檔名結尾都會有.h (headers)
+>    * 標準函式庫主要提供這些功能：
+>       * 字串處理 Ex: `#include <ctype.h>`
+>       * 數學運算 Ex: `#include <cmath.h>`
+>       * 輸入、輸出處理 Ex: `#include <stdio.h>`
+>       * 記憶體管理 Ex: `#include <stdlib.h>`
+>       * 與作業系統服務相關功能
+>    * 若對任何函式有疑問可以上[cplusplus網站](http://www.cplusplus.com/reference/clibrary/)查詢詳細說明
+
+### 變數名稱可視範圍（Scope）
+> * [範例原始碼 14_scope.c](https://github.com/KenHuang2019/C/blob/master/example/14_scope.c)
+>    * 依照宣告位置而言，一共分為三種類型：
+>       * 全域變數（Global variable）：宣告在函式外面，因容易造成汙染，應盡量避免使用
+>       * 區域變數（Local variable）：宣告在函式內（被包含在{}內），是最常使用到的種類
+>       * 函式參數（Formal parameter）：僅在參數位置使用
+```c
+#include <stdio.h>
+
+int g; //  g 為 全域變數（Global variable）
+
+int main(){
+    int l; // l 為 區域變數（Local variable）
+    {
+        int l; //  l 為 區域變數（Local variable）
+    }
+}
+
+int f(int fp) { // fp 為 函式參數（Formal parameter）
+    return 0;
+}
+```
+
 
 ```
 章節原始碼範例:
