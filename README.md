@@ -173,6 +173,7 @@
 >    * 若條件成立，且須執行程式碼僅有一行可省略條件敘述之後的{}，Ex:
 ```c
 #include <stdio.h>
+
 int main(){
     int a = 5;
     if(a < 5)
@@ -190,6 +191,7 @@ int main(){
 ![switch_statement_flowchart](https://github.com/KenHuang2019/C/blob/master/images/6_switch_flowchart.png)
 ```c
 #include <stdio.h>
+
 int main(){
     char a = '3';
     switch (a) {
@@ -215,6 +217,7 @@ int main(){
 ![while_statement_flowchart](https://github.com/KenHuang2019/C/blob/master/images/7_while_loop_flowchart.png)
 ```c
 #include <stdio.h>
+
 int main(){
     int a = 1;
     while (a != 3) { // 當a不等於3時，執行以下程式
@@ -229,6 +232,7 @@ int main(){
 ![do_while_statement_flowchart](https://github.com/KenHuang2019/C/blob/master/images/8_do_while_loop_flowchart.png)
 ```c
 #include <stdio.h>
+
 int main(){
     int a = 1;
     do { // 無論如何先執行以下程式
@@ -242,6 +246,8 @@ int main(){
 >    * 與while和do-while迴圈不同的地方在於，for迴圈適用於已知執行次數的狀態
 ![for_statement_flowchart](https://github.com/KenHuang2019/C/blob/master/images/9_for_loop_flowchart.png)
 ```c
+#include <stdio.h>
+
 int main(){
     for (int a = 1; a <= 3; a++) // for 後面的()內需要依序填入「初始值」、「條件式」、「迴圈式」
     {
@@ -266,6 +272,8 @@ int main(){
 >    * 在主程式中，需要先被定義才能呼叫來做使用
 >    * 若執行內容一定要放在呼叫函式的後方，也要先做宣告 `回傳值型別 函式名稱 (參數型別 參數名稱, ...)` 可將 `{ ... reutn 回傳值; }` 留到後方再寫
 ```c
+#include <stdio.h>
+
 int add_1(int x) {
     return x + 1;
 }
