@@ -70,7 +70,7 @@
 這邊僅記錄重點，詳細敘述會用comment寫在範例原始碼
 
 ### C語言程式基礎架構
-> * [範例原始碼 0_Simple_script.c](https://github.com/KenHuang2019/C/blob/master/0_simple_script.c)
+> * [範例原始碼 0_Simple_script.c](https://github.com/KenHuang2019/C/blob/master/example/0_simple_script.c)
 >    * 註解寫法 `//這是單行註解` `/* 這種是多行註解 */`
 >    * 引用函式庫 `#include <標準函式庫名稱>`
 >    * 理解 `main()` 架構和程式區塊
@@ -79,14 +79,14 @@
 >    * 在閱讀任何範例時學會 Follow coding style
 
 ### 字符輸出
-> * [範例原始碼 1_printf.c](https://github.com/KenHuang2019/C/blob/master/1_printf.c)
+> * [範例原始碼 1_printf.c](https://github.com/KenHuang2019/C/blob/master/example/1_printf.c)
 >    * 跳脫字元 Ex: `\n`
 >    * 跨行輸出
 >    * format語法與specifier character `printf("代入數字%d輸出", 1)`
 >    * format格式指定 `printf("a=%7.2f", 1.33333); // 結果為 1.33`
 
 ### 資料型別與變數
-> * [範例原始碼 2_data_type_and_variables.c](https://github.com/KenHuang2019/C/blob/master/2_data_type_and_variables.c)
+> * [範例原始碼 2_data_type_and_variables.c](https://github.com/KenHuang2019/C/blob/master/example/2_data_type_and_variables.c)
 >    * 變數命名寫法：資料型別 變數名稱;　`int num;` ，**切記要讓名稱有意義，要能幫助他人閱讀程式**
 >    * 變數命名若使用多個英文單字，第二個單字開始用大寫開頭 Ex: `int maxScore=0;`
 >    * 初始化寫法：資料型別 變數名稱 = 初始值;　`int num = 0;`
@@ -116,14 +116,14 @@
 (依實際作業系統不同可能有微小差異，完整介紹介紹可參考[維基百科](https://en.wikipedia.org/wiki/C_data_types))
 
 ### 字元編碼
-> * [範例原始碼 3_char_encoding.c](https://github.com/KenHuang2019/C/blob/master/3_char_encoding.c)
+> * [範例原始碼 3_char_encoding.c](https://github.com/KenHuang2019/C/blob/master/example/3_char_encoding.c)
 >    * 常見編碼方式 [ASCII](https://zh.wikipedia.org/zh-tw/ASCII) 、 [Big-5](https://zh.wikipedia.org/zh-tw/%E5%A4%A7%E4%BA%94%E7%A2%BC) 、 [UTF-8](https://zh.wikipedia.org/zh-tw/UTF-8)
 >    * 字元運算 `printf('A' + 1) // B`
 >    * 大小寫轉換 `printf('A' + 32) // a`
 >    * 可使用 getchar() 取得ASCII code Ex: `getchar('A') // 66`
 
 ### 運算元、運算子、表示式
-> * [範例原始碼 4_operator_and_expression.c](https://github.com/KenHuang2019/C/blob/master/4_operator_and_expression.c)
+> * [範例原始碼 4_operator_and_expression.c](https://github.com/KenHuang2019/C/blob/master/example/4_operator_and_expression.c)
 >    * 表示式 `5 - 4 + 3 * 2 % 1`
 >    * 運算子 `+ - * / %`<br>
             /是除，若對象是整數，結果會捨去小數<br>
@@ -141,7 +141,7 @@
 >    * 關係運算子與邏輯運算子因為常與條件敘述混合使用，後續再紀錄重點
 
 ### 流程控制 - if 條件敘述 ( if {...} lese if {...} else {...} )
-> * [範例原始碼 5_if_else.c](https://github.com/KenHuang2019/C/blob/master/5_if_else.c)
+> * [範例原始碼 5_if_else.c](https://github.com/KenHuang2019/C/blob/master/example/5_if_else.c)
 >    * 近似於口語的 如果... 或者... 不然... `if ( 表示式表達條件 ) { 程式執行特定功能 }`
 >    * 入門可以從畫flowchart開始 (single-entry / single-exit control)
 ![if_statement_flowchart](https://github.com/KenHuang2019/C/blob/master/images/5_if_flowchart.png)
@@ -184,7 +184,7 @@ int main(){
 }
 ```
 ### 流程控制 - switch 條件敘述 ( switch (變數) { case 條件: ...; break; case 條件: ...; break; default: ...; } )
-> * [範例原始碼 6_switch.c](https://github.com/KenHuang2019/C/blob/master/6_switch.c)
+> * [範例原始碼 6_switch.c](https://github.com/KenHuang2019/C/blob/master/example/6_switch.c)
 >    * if ... else if ... else ... 的另一種寫法，但語法上更簡潔，不需要重複寫被判斷的變數名稱及部分運算子
 >    * 不適用於多重數值區間判斷，比較適合單一變數的多種等於狀態判斷
 ![switch_statement_flowchart](https://github.com/KenHuang2019/C/blob/master/images/6_switch_flowchart.png)
@@ -207,7 +207,7 @@ int main(){
 }
 ```
 ### 流程控制 - while 迴圈敘述 ( while (表達式) { ... })
-> * [範例原始碼 7_while.c](https://github.com/KenHuang2019/C/blob/master/7_while.c)
+> * [範例原始碼 7_while.c](https://github.com/KenHuang2019/C/blob/master/example/7_while.c)
 >    * 迴圈可重複執行特定功能
 >    * while 迴圈近似於口語的「當」表達式成立(也就是真偽值是1)，就做...
 >    * while 迴圈適用於「不確定會執行次數的狀態」
@@ -224,7 +224,7 @@ int main(){
 }
 ```
 ### 流程控制 - do-while 迴圈敘述 ( do { ... } while (表達式); )
-> * [範例原始碼 8_do_while.c](https://github.com/KenHuang2019/C/blob/master/8_do_while.c)
+> * [範例原始碼 8_do_while.c](https://github.com/KenHuang2019/C/blob/master/example/8_do_while.c)
 >    * 類似於while迴圈，但會先執行特定功能才判斷表達式的狀態 <br>
 ![do_while_statement_flowchart](https://github.com/KenHuang2019/C/blob/master/images/8_do_while_loop_flowchart.png)
 ```c
@@ -238,7 +238,7 @@ int main(){
 }
 ```
 ### 流程控制 - for 迴圈敘述 ( for (初始值; 條件式; 迴圈式;) { ... } )
-> * [範例原始碼 9_for.c](https://github.com/KenHuang2019/C/blob/master/9_for.c)
+> * [範例原始碼 9_for.c](https://github.com/KenHuang2019/C/blob/master/example/9_for.c)
 >    * 與while和do-while迴圈不同的地方在於，for迴圈適用於已知執行次數的狀態
 ![for_statement_flowchart](https://github.com/KenHuang2019/C/blob/master/images/9_for_loop_flowchart.png)
 ```c
@@ -250,17 +250,17 @@ int main(){
 }
 ```
 ### 流程控制 - break 敘述
-> * [範例原始碼 10_break.c](https://github.com/KenHuang2019/C/blob/master/10_break.c)
+> * [範例原始碼 10_break.c](https://github.com/KenHuang2019/C/blob/master/example/10_break.c)
 >    * 直接無視終止條件跳出迴圈
 ![break_statement_flowchart](https://github.com/KenHuang2019/C/blob/master/images/10_break_flowchart.png)
 
 ### 流程控制 - continue 敘述
-> * [範例原始碼 11_continue.c](https://github.com/KenHuang2019/C/blob/master/11_continue.c)
+> * [範例原始碼 11_continue.c](https://github.com/KenHuang2019/C/blob/master/example/11_continue.c)
 >    * 略過該迴圈剩下程式，直接進入下個迴圈
 ![continue_statement_flowchart](https://github.com/KenHuang2019/C/blob/master/images/11_continue_flowchart.png)
 
 ### 函式 ( 回傳值型別 函式名稱 (參數型別 參數名稱, ...) { ... reutn 回傳值; } )
-> * [範例原始碼 12_function.c](https://github.com/KenHuang2019/C/blob/master/12_function.c)
+> * [範例原始碼 12_function.c](https://github.com/KenHuang2019/C/blob/master/example/12_function.c)
 >    * 基於數學上的函數概念，將片段程式設計為獨立模組，具有特定功能
 >    * 通常目的都是為了「重複利用」特定功能，或是「讓程式碼更好閱讀」
 >    * 在主程式中，需要先被定義才能呼叫來做使用
