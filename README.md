@@ -329,7 +329,7 @@ int f(int fp) { // fp 為 函式參數（Formal parameter）
 >    * `extern int x` 用法通常會在自定義 header 檔案時使用，自定義的 header 可透過 ` #include "自定義檔案名稱.h"; ` 語法引入，通常與標準函式庫一起放在程式開頭
 
 ### 列舉（enumerate）
-> * [範例原始碼 16_enunerate.c](https://github.com/KenHuang2019/C/blob/master/example/16_enunerate.c)
+> * [範例原始碼 16_enunerate.c](https://github.com/KenHuang2019/C/blob/master/example/16_enuerate.c)
 >    * enumerate 是一種複合型別，將自定義詞彙作為程式中數個獨一無二的符號 (symbol)，再 mapping 到 index 做運算
 >    * 常用在宣告僅有少數值的變數，像是一星期內的日 ( Monday, Tuesday, ... ) 或是月份等
 >    * 主要目的是增加程式的閱讀性
