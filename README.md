@@ -296,7 +296,7 @@ int main(){
 >       * 與作業系統服務相關功能
 >    * 若對任何函式有疑問可以上[cplusplus網站](http://www.cplusplus.com/reference/clibrary/)查詢詳細說明
 
-### 變數名稱可視範圍（Scope）
+### 變數作用域（Scope）
 > * [範例原始碼 14_scope.c](https://github.com/KenHuang2019/C/blob/master/example/14_scope.c)
 >    * 依照宣告位置而言，一共分為三種類型：
 >       * 全域變數（Global variable）：宣告在函式外面，因容易造成汙染，應盡量避免使用
@@ -320,15 +320,39 @@ int f(int fp) { // fp 為 函式參數（Formal parameter）
 ```
 
 ### 變數儲存等級（Storage class）
+> * [範例原始碼 15_storage_class.c](https://github.com/KenHuang2019/C/blob/master/example/15_storage_class.c)
 >    * 依照變數在記憶體的儲存方式可分為四個種類：
 >       * 自動變數，語法： `auto int x;`，為系統預設儲存方式，在函數要被使用時才分配，函數結束時還給作業系統（基本上不會寫auto，讓系統自動配置就好）
 >       * 靜態變數，語法： `static int x;`，從程式開始執行就分配記憶體空間，直到程式結束後才會還給作業系統
->       * 外部變數，語法： `extern int x;`，用於宣告存放在其他檔案中的變數
+>       * 外部變數，語法： `extern int x;`，用於宣告存放在其他檔案中的變數（通常以Global scope宣告，才可直接被 main function 引用；狀態則類似static，會從程式開始執行就存在，直到程式結束才回收記憶體空間）
 >       * 暫存器變數，語法： `register int x;`，直接將變數放在暫存器，處理速度上會比一般放在DRAM來得快
+>    * `extern int x` 用法通常會在自定義 header 檔案時使用，自定義的 header 可透過 ` #include "自定義檔案名稱.h"; ` 語法引入，通常與標準函式庫一起放在程式開頭
 
+### 列舉（enumerate）
+> * [範例原始碼 16_enunerate.c](https://github.com/KenHuang2019/C/blob/master/example/16_enunerate.c)
+>    * enumerate 是一種複合型別，將自定義詞彙作為程式中數個獨一無二的符號 (symbol)，再 mapping 到 index 做運算
+>    * 常用在宣告僅有少數值的變數，像是一星期內的日 ( Monday, Tuesday, ... ) 或是月份等
+>    * 主要目的是增加程式的閱讀性
+>    * 可定義多個 enumerate 複合型別，但其內容所使用到的符號不可重複
+```c
+#include <stdio.h>
 
+enum e { A, B, C, D }; // enumerate 宣告語法
 
+int main(){
+    enum e alphabet = A; // 若要使用 enumerate 變數的宣告方法
+    printf("%d", dest); // 因為 enumerate 是對 index 做 mapping，所以此例的 A 是 0
+}
+```
 
+### 亂數生成
+> * [範例原始碼 17_random_number.c](https://github.com/KenHuang2019/C/blob/master/example/17_random_number.c)
+>    * 標準函式庫 stdlib.h 裡面有一個函式 rand() 可透過數學公式產出一序列的隨機數
+>    * 但電腦無法產生完全隨機的數（重新執行一次的序列會一樣），因此通常搭配 srand() 和 time(NULL) 函式，以當下時間生成的無號整數作為seed
+
+### 遞迴（Recursion）
+> * [範例原始碼 18_recursion.c](https://github.com/KenHuang2019/C/blob/master/example/18_recursion.c)
+>    * 將問題拆解後，透過重複呼叫本身函式的手法，重複完成特定計算
 
 ```
 章節原始碼範例:
