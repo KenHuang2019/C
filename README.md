@@ -299,9 +299,9 @@ int main(){
 ### 變數作用域（Scope）
 > * [範例原始碼 14_scope.c](https://github.com/KenHuang2019/C/blob/master/example/14_scope.c)
 >    * 依照宣告位置而言，一共分為三種類型：
->       * 全域變數（Global variable）：宣告在函式外面，因容易造成汙染，應盡量避免使用
->       * 區域變數（Local variable）：宣告在函式內（被包含在{}內），是最常使用到的種類
->       * 函式參數（Formal parameter）：僅在參數位置使用
+>       * 全域變數（Global variable）：宣告在函式外面，因容易造成汙染，應盡量避免使用。在編譯時就會初始化好，直到程式結束
+>       * 區域變數（Local variable）：宣告在函式內（被包含在{}內），是最常使用到的種類。使用到的時後才做初始化
+>       * 函式參數（Formal parameter）：僅在函式的參數位置使用
 ```c
 #include <stdio.h>
 
@@ -353,6 +353,11 @@ int main(){
 ### 遞迴（Recursion）
 > * [範例原始碼 18_recursion.c](https://github.com/KenHuang2019/C/blob/master/example/18_recursion.c)
 >    * 將問題拆解後，透過重複呼叫本身函式的手法，重複完成特定計算
+
+### 溢位問題（Overflow）
+> * [範例原始碼 19_overflow.c](https://github.com/KenHuang2019/C/blob/master/example/19_overflow.c)
+>    * 超過變數能表示的範圍時，變數內儲存之數值會無法正常顯示
+>    * 可透過標準函式庫 `#include <limits.h>` 的 `INT_MAX` 或 `INT_MIN` 這類語法來檢視變數可儲存之數值範圍
 
 ```
 章節原始碼範例:
