@@ -121,6 +121,7 @@
 >    * 字元運算 `printf('A' + 1) // B`
 >    * 大小寫轉換 `printf('A' + 32) // a`
 >    * 可使用 getchar() 取得ASCII code Ex: `getchar('A') // 66`
+>    * EOF ( End of file ) 常數常用來設定為程式終止條件，相當於在 Windows 按 Ctrl+Z 或是在 Linux & MAC 按 Ctrl+D
 
 ### 運算元、運算子、表示式
 > * [範例原始碼 4_operator_and_expression.c](https://github.com/KenHuang2019/C/blob/master/example/4_operator_and_expression.c)
@@ -358,6 +359,10 @@ int main(){
 > * [範例原始碼 19_overflow.c](https://github.com/KenHuang2019/C/blob/master/example/19_overflow.c)
 >    * 超過變數能表示的範圍時，變數內儲存之數值會無法正常顯示
 >    * 可透過標準函式庫 `#include <limits.h>` 的 `INT_MAX` 或 `INT_MIN` 這類語法來檢視變數可儲存之數值範圍
+
+### 陣列 ( 元素資料型別 陣列變數名稱 \[元素個數] )
+> * [範例原始碼 20_array.c](https://github.com/KenHuang2019/C/blob/master/example/20_array.c)
+>    * 用一段連續記憶體空間來儲存一組類似的資訊
 
 ```
 章節原始碼範例:
