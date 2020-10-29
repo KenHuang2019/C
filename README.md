@@ -353,7 +353,7 @@ int main(){
 
 ### 遞迴（Recursion）
 > * [範例原始碼 18_recursion.c](https://github.com/KenHuang2019/C/blob/master/example/18_recursion.c)
->    * 將問題拆解後，透過重複呼叫本身函式的手法，重複完成特定計算
+>    * 將問題拆解後，在函式內重複呼叫函式本身，重複特定計算解決可被重複分解的問題
 
 ### 溢位問題（Overflow）
 > * [範例原始碼 19_overflow.c](https://github.com/KenHuang2019/C/blob/master/example/19_overflow.c)
