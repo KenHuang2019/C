@@ -372,8 +372,8 @@ int main(){
 >    * 一般變數傳入另一個函示會複製一份資料(call by value)，陣列僅複製要傳遞的開頭指標，並將此指標傳入其他函式，所以若在其他函式內改變陣列內儲存的值，都會直接連動到原本陣列(call by address)，使用時要謹慎思考這個特性
 >    * 讀取陣列元素時，需將 index 放在中括號內，可結合運算式進行讀取，Ex: `arr[n+1]`
 >    * 讀取陣列元素時，不可超出存取範圍。一旦超出範圍，可能讀取倒垃圾資料，或影響到其他程式的時候，作業系統會自動將該程式強制終止(Compiler 不會檢查這種錯誤)
->    * 陣列可用來儲存字串，Ex: `char string_1[] = "string";` 字串前後需用雙引號包住，字串結尾有一個 null character 用來表示這些字元是個字串，若宣告時有指定元素個數，需多留個位置給 null character
->    * 透過scanf讀取字串時，變數名稱前不需要加 & ，Ex: `scanf("%s", string_1);`，因為變數名稱直接就是 address
+>    * 可使用 `sizeof()` 量測陣列長度
+
 ```c
 #include <stdio.h>
 
@@ -383,6 +383,22 @@ int main(){
     {
         printf("%d", arr[i]); // 陣列的中誇號內可放入運算式或變數作為 index 再讀取陣列元素
     }
+}
+```
+### 字串（String）
+> * [範例原始碼 21_string.c](https://github.com/KenHuang2019/C/blob/master/example/21_string.c)
+>    * 字串在C語言是以一段連續字元組成，並不是另一種資料型別
+>    * 儲存字串的宣告方式與一般字元相同，Ex: `char string_1[] = "string";` 但字串內容前後需用雙引號包住
+>    * 字串結尾有一個 null character 用來表示這些字元是個字串，若宣告時有指定元素個數，需多留個位置給 null character
+>    * 使用 `sizeof()` 量測陣列長度時，會連同 null character 一起算進去，比較好的方法是自己寫迴圈去讀取計數，計到程式讀到 \0 為止
+>    * 透過scanf讀取字串時，變數名稱前不需要加 & ，Ex: `scanf("%s", string_1);`，因為變數名稱直接就是 address
+
+```c
+#include <stdio.h>
+
+int main(){
+    char str[] = "abc"; // 若要使用陣列的宣告方法
+    printf("%s", str); // 在 Terminal 輸出 abc
 }
 ```
 
