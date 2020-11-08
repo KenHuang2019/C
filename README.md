@@ -210,7 +210,7 @@ int main(){
             printf("a is not 1 or 2 or 3\n");
 }
 ```
-### 流程控制 - while 迴圈敘述 ( while (表達式) { ... })
+### 流程控制 - while 迴圈敘述 ( while (表達式) { ... } )
 > * [範例原始碼 7_while.c](https://github.com/KenHuang2019/C/blob/master/example/7_while.c)
 >    * 迴圈可重複執行特定功能
 >    * while 迴圈近似於口語的「當」表達式成立(也就是真偽值是1)，就做...
@@ -298,7 +298,7 @@ int main(){
 >       * 與作業系統服務相關功能
 >    * 若對任何函式有疑問可以上[cplusplus網站](http://www.cplusplus.com/reference/clibrary/)查詢詳細說明
 
-### 變數作用域（Scope）
+### 變數作用域 ( Scope )
 > * [範例原始碼 14_scope.c](https://github.com/KenHuang2019/C/blob/master/example/14_scope.c)
 >    * 依照宣告位置而言，一共分為三種類型：
 >       * 全域變數（Global variable）：宣告在函式外面，因容易造成汙染，應盡量避免使用。在編譯時就會初始化好，直到程式結束
@@ -321,7 +321,7 @@ int f(int fp) { // fp 為 函式參數（Formal parameter）
 }
 ```
 
-### 變數儲存等級（Storage class）
+### 變數儲存等級 ( Storage class )
 > * [範例原始碼 15_storage_class.c](https://github.com/KenHuang2019/C/blob/master/example/15_storage_class.c)
 >    * 依照變數在記憶體的儲存方式可分為四個種類：
 >       * 自動變數，語法： `auto int x;`，為系統預設儲存方式，在函數要被使用時才分配，函數結束時還給作業系統（基本上不會寫auto，讓系統自動配置就好）
@@ -330,7 +330,7 @@ int f(int fp) { // fp 為 函式參數（Formal parameter）
 >       * 暫存器變數，語法： `register int x;`，直接將變數放在暫存器，處理速度上會比一般放在DRAM來得快
 >    * `extern int x` 用法通常會在自定義 header 檔案時使用，自定義的 header 可透過 ` #include "自定義檔案名稱.h"; ` 語法引入，通常與標準函式庫一起放在程式開頭
 
-### 列舉（enumerate）
+### 列舉 ( enumerate )
 > * [範例原始碼 16_enunerate.c](https://github.com/KenHuang2019/C/blob/master/example/16_enuerate.c)
 >    * enumerate 是一種複合型別，將自定義詞彙作為程式中數個獨一無二的符號 (symbol)，再 mapping 到 index 做運算
 >    * 常用在宣告僅有少數值的變數，像是一星期內的日 ( Monday, Tuesday, ... ) 或是月份等
@@ -352,12 +352,12 @@ int main(){
 >    * 標準函式庫 stdlib.h 裡面有一個函式 rand() 可透過數學公式產出一序列的隨機數
 >    * 但電腦無法產生完全隨機的數（重新執行一次的序列會一樣），因此通常搭配 srand() 和 time(NULL) 函式，以當下時間生成的無號整數作為seed
 
-### 遞迴（Recursion）
+### 遞迴 ( Recursion )
 > * [範例原始碼 18_recursion.c](https://github.com/KenHuang2019/C/blob/master/example/18_recursion.c)
 >    * 將問題拆解後，在函式內重複呼叫函式本身，重複特定計算解決可被重複分解的問題
 >    * 使用時須注意問題拆解後的結構，可能會出現效能問題
 
-### 溢位問題（Overflow）
+### 溢位問題 ( Overflow )
 > * [範例原始碼 19_overflow.c](https://github.com/KenHuang2019/C/blob/master/example/19_overflow.c)
 >    * 超過變數能表示的範圍時，變數內儲存之數值會無法正常顯示
 >    * 可透過標準函式庫 `#include <limits.h>` 的 `INT_MAX` 或 `INT_MIN` 這類語法來檢視變數可儲存之數值範圍
@@ -373,7 +373,6 @@ int main(){
 >    * 讀取陣列元素時，需將 index 放在中括號內，可結合運算式進行讀取，Ex: `arr[n+1]`
 >    * 讀取陣列元素時，不可超出存取範圍。一旦超出範圍，可能讀取倒垃圾資料，或影響到其他程式的時候，作業系統會自動將該程式強制終止(Compiler 不會檢查這種錯誤)
 >    * 可使用 `sizeof()` 量測陣列長度
-
 ```c
 #include <stdio.h>
 
@@ -385,14 +384,14 @@ int main(){
     }
 }
 ```
-### 字串（String）
+
+### 字串（ String ）
 > * [範例原始碼 21_string.c](https://github.com/KenHuang2019/C/blob/master/example/21_string.c)
 >    * 字串在C語言是以一段連續字元組成，並不是另一種資料型別
 >    * 儲存字串的宣告方式與一般字元相同，Ex: `char string_1[] = "string";` 但字串內容前後需用雙引號包住
 >    * 字串結尾有一個 null character 用來表示這些字元是個字串，若宣告時有指定元素個數，需多留個位置給 null character
 >    * 使用 `sizeof()` 量測陣列長度時，會連同 null character 一起算進去，比較好的方法是自己寫迴圈去讀取計數，計到程式讀到 \0 為止
 >    * 透過scanf讀取字串時，變數名稱前不需要加 & ，Ex: `scanf("%s", string_1);`，因為變數名稱直接就是 address
-
 ```c
 #include <stdio.h>
 
@@ -401,6 +400,8 @@ int main(){
     printf("%s", str); // 在 Terminal 輸出 abc
 }
 ```
+
+
 
 ```
 章節原始碼範例:
